@@ -1,0 +1,28 @@
+{
+  "phase1_v01_exists": true,
+  "phase2a_v02_exists": true,
+  "v02_glb_exists": true,
+  "phase1_building_count": 233,
+  "phase2a_building_count": 233,
+  "same_233_building_ids": true,
+  "building_geometry_hashes_unchanged": true,
+  "changed_building_ids": [],
+  "v02_road_object_count": 236,
+  "v02_park_object_count": 1,
+  "real_osm_road_ids_preserved_in_blend": true,
+  "park_relation_preserved_in_blend": true,
+  "roads_and_park_have_finite_coordinates": true,
+  "roads_and_park_surface_normals_up": true,
+  "glb_reimports": true,
+  "all_building_ids_present_in_glb": true,
+  "max_building_bounds_error_blend_vs_glb_m": 0.0,
+  "building_bounds_preserved_to_2cm_in_glb": true,
+  "all_osm_road_ids_present_in_glb": true,
+  "park_relation_present_in_glb": true,
+  "glb_mesh_object_count": 471,
+  "scene_provenance": {
+    "phase2a_source": "OpenStreetMap API current extract; ODbL 1.0; retrieved 2026-10-12 UTC",
+    "phase2a_license": "Open Data Commons Open Database License (ODbL) 1.0",
+    "phase2a_attribution": "OpenStreetMap and contributors"
+  }
+}
