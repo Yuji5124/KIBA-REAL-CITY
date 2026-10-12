@@ -51,6 +51,19 @@ The OSM API response declares the Open Data Commons Open Database License (ODbL)
 
 The Kiba Park boundary is OSM multipolygon `relation/14273608`, tagged `木場公園` / `Kiba Park`; its OSM tags link to the Tokyo Metropolitan Park Association page. The local map-check PNG compares geometry with GSI standard-map tiles. See [LICENSE_DATA.md](LICENSE_DATA.md) for source terms, verification limits, and the publication status of generated assets. The detailed run report and map-check images are kept local while redistribution terms remain unresolved; this public commit contains the automated validation summary. The Phase 2A build writes new `KIBA_REAL_CITY_v02` files and refuses to overwrite existing v02 outputs; move aside those two files before deliberately rebuilding. It never writes the v01 BLEND or GLB.
 
+## Phase 2B: mapped park vegetation, paths, water, and bridges
+
+Phase 2B uses the saved real OSM extract and requires the locally generated v02 BLEND. It does not fabricate tree locations or green polygons. In the 2026-10-12 extract it found 33 tagged tree points (no species/height/crown dimensions), 17 visible mapped green polygons, 14 water features, and 2 mapped bridge footprints including Kiba Park Bridge. Unknown tree shape/size, linear-water width, and bridge display elevation are explicitly labeled estimates on each Blender object.
+
+```powershell
+python scripts/convert_phase2b_osm.py
+python scripts/build_phase2b_blender.py
+python scripts/validate_phase2b.py
+python scripts/render_phase2b_preview.py
+```
+
+The build preserves all 233 building meshes, all 236 road/path feature IDs and meshes, and the Phase 2A park boundary. It moves 108 existing park walking corridors to `08_PARK_PATHS` without changing their geometry, then adds separate `04_TREES`, `07_GRASS`, `09_WATER`, and `06_BRIDGES` features. Outputs are `output/KIBA_REAL_CITY_v03.blend`, `output/KIBA_REAL_CITY_v03.glb`, `output/geo_reference_v03.json`, and local reports/previews under `reports/`. The v03 build refuses to overwrite existing files. The local output remains excluded from this public commit while data redistribution terms are reviewed; see [LICENSE_DATA.md](LICENSE_DATA.md).
+
 ## Reusable location configuration
 
 Edit `config/kiba_park.json` to select another center, projected CRS, and square size. All features use the same projected local origin; Blender X is east, Y north, and Z up. `data/raw` is an ingestion location for manually downloaded official packages when automated catalog access is unavailable.
