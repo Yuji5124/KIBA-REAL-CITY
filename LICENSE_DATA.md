@@ -41,3 +41,65 @@ Kept local and excluded from this public commit because they contain or depict s
 - Downloaded OSM extracts, GSI tile images, and extracted CityGML source files under `data/raw/`.
 
 These files remain available in the local workspace. Do not add them to a public repository or Git LFS until the relevant redistribution terms have been confirmed; Git LFS does not change the underlying license obligations. Phase 1 BLEND/GLB already present in the repository history are not modified by this commit.
+
+## Phase 3D extension: Museum of Contemporary Art and expanded Kiba Park
+
+Sources checked on 2026-10-12 UTC through the official PLATEAU catalog API and
+OpenStreetMap API. API payload snapshots and derived geometry are local under
+`data/processed/` and `data/raw/` and are excluded from Git.
+
+### PLATEAU Koto City 2023 and 2025 catalog checks
+
+- 2023 dataset: <https://www.geospatial.jp/ckan/dataset/plateau-13108-koto-ku-2023>.
+  The CKAN dataset page/package remained inaccessible (HTTP 403), so the exact
+  Koto 2023 dataset-specific rights notice and attribution wording remain
+  **unverified**. The two local 2023 source meshes are
+  `53394604_bldg_6697_op.gml` and `53394614_bldg_6697_op.gml`; both use PLATEAU
+  building data in EPSG:6697 and were transformed to EPSG:6677 for the model.
+- Official rectangular query used for the expanded extent:
+  <https://api.plateauview.mlit.go.jp/datacatalog/citygml/r:139.8051362713,35.6713587727,139.8107204991,35.6802912945>.
+  The response is saved locally in `data/processed/phase3d_plateau_catalog.json`.
+  It reported Koto 2025 spec 5.0; 2742 building features (143 LOD2) for mesh
+  `53394604`; 3243 building features and **0 LOD2** for `53394614`, which
+  contains the museum. Koto 2025 LOD2 3D Tiles are listed in the catalog, but
+  their direct `assets.cms.plateau.reearth.io` host was blocked by the network
+  proxy; no such tile was treated as downloaded or used.
+- General PLATEAU policy page: <https://www.mlit.go.jp/plateau/site-policy/>;
+  official PDL 1.0 text: <https://www.digital.go.jp/resources/open_data/public_data_license_v1.0>.
+  As recorded above, the general policy summarizes PDL 1.0 as the usual license
+  for Geospatial Information Center PLATEAU publications, subject to any
+  dataset-specific rights notice. The dataset-specific 2023 notice was not
+  checked successfully. Suggested attribution remains provisional:
+  `出典：Project PLATEAU 江東区2023年度3D都市モデル（江東区・国土交通省）を加工して作成。`
+  Identify the source URL and modifications if/when publication rights are
+  confirmed. This exact line is not represented as an officially verified
+  dataset credit.
+
+### OpenStreetMap extension
+
+- Extract URL:
+  <https://api.openstreetmap.org/api/0.6/map?bbox=139.8043074543,35.6706825459,139.8115491626,35.6809674762>.
+  Retrieved 2026-10-12 22:51:51 UTC; server `Date` header was
+  `Mon, 12 Oct 2026 22:51:50 GMT`. The API XML declares
+  <https://opendatacommons.org/licenses/odbl/1-0/> and the attribution
+  <https://www.openstreetmap.org/copyright>; the literal API metadata says
+  `OpenStreetMap and contributors`. The full ODbL terms page could not be
+  independently opened in this environment, so this check records the API's
+  declaration, not a fresh legal review of the complete terms.
+- Museum: OSM multipolygon `relation/12077221`, tagged `東京都現代美術館`.
+  Kiba Park: `relation/14273608`. No separate museum parcel/cadastral polygon
+  was mapped; the complete mapped park relation supplies the wider grounds
+  context. It is not a legal parcel boundary.
+- The local extent comparison is drawn from OSM vector features and includes
+  `© OpenStreetMap contributors`, snapshot date, and source URL in this file;
+  it uses no GSI tile image.
+
+### Phase 3D publication status
+
+The v05 BLEND/GLB, local OSM extracts, PLATEAU-derived extensions, their
+previews, and detailed reports remain excluded from public Git while the exact
+2023 package rights notice and full ODbL terms have not been independently
+confirmed. Source-derived geometry in a preview/report is also treated as
+restricted for publication until the terms are resolved. The new reproducible
+scripts and this documentation can be reviewed separately; no generated v05
+asset is included in a code-only commit.

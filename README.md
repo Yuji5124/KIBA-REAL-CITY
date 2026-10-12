@@ -70,4 +70,73 @@ Edit `config/kiba_park.json` to select another center, projected CRS, and square
 
 ## Data and license
 
-See [LICENSE_DATA.md](LICENSE_DATA.md) before publishing input data or generated outputs. The Koto City 2023 PLATEAU source terms and GSI tile terms used in this run could not be verified, so new derived models, references, reports with building attributes, and map imagery are intentionally not in this public Phase 2A commit. The two PLATEAU mesh ZIPs were already tracked before this commit; this commit does not add or modify them. Newly downloaded source files and local build outputs remain ignored by Git.
+See [LICENSE_DATA.md](LICENSE_DATA.md) before publishing input data or generated outputs. The Koto City 2023 PLATEAU source terms and GSI tile terms used in this run could not be verified, so new derived models, references, reports with building attributes, and map imagery are intentionally not in the public Phase 2A commit. The two PLATEAU mesh ZIPs were already tracked before that commit; this documentation does not add or modify them. Newly downloaded source files and local build outputs remain ignored by Git.
+
+# Phase 3 visual revision (local)
+
+Phase 3 creates a new v04 from the locally stored Phase 2B v03
+outputs. It verifies the v03 BLEND and GLB SHA-256 hashes before opening the
+scene, refuses to overwrite any existing v04 files, and keeps v01-v03 intact.
+
+```bash
+python scripts/build_phase3.py
+python scripts/validate_phase3.py
+python scripts/render_phase3_preview.py
+```
+
+This writes `output/KIBA_REAL_CITY_v04.blend`, `output/KIBA_REAL_CITY_v04.glb`,
+`output/geo_reference_v04.json`, `reports/phase3_report.json`,
+`reports/phase3_report.md`, and `reports/KIBA_REAL_CITY_v04_preview.png`.
+The model outputs remain local because the composite-data redistribution
+conditions have not been resolved; they are ignored by Git.
+
+Materials change appearance only. The 33 Phase 2B tree source meshes and
+coordinates are retained hidden in `99_REFERENCE`; editable display trees are
+separate meshes at those same OSM positions. Their species and forms are not
+asserted as measured data. The Phase 3 validator compares IDs, world-space
+vertices, faces, and tree positions with v03, then reimports the GLB and checks
+building bounds and tree source IDs.
+
+## Phase 3D: Kiba Park to the Museum of Contemporary Art Tokyo
+
+Phase 3D extends the model north to the real mapped Tokyo Metropolitan Museum of
+Contemporary Art while including the whole mapped Kiba Park multipolygon. The
+smallest EPSG:6677 axis-aligned rectangle that includes both and the full v04
+500 m square measures approximately 505.24 m east-west by 990.86 m north-south.
+It retains the original v04 projected origin. The museum was identified by OSM
+`relation/12077221` and matched to PLATEAU CityGML building
+`bldg_41c3fd1a-c5a7-4e60-b4dc-e51c08ea895a`; the source is real 2023 LOD1.
+Its LOD1 solid height (16.627 m) differs from `measuredHeight` (24.1 m), so both
+values and the difference are kept in the report. The official 2025 extent
+query reports no LOD2 CityGML building feature in mesh `53394614`; the listed
+2025 LOD2 3D Tiles were not used because their asset host was inaccessible.
+
+The v05 build requires the existing local v04 files, the two already downloaded
+Koto mesh GMLs, and a fresh OSM extract. It refuses to overwrite v05 output or
+preview files. The build verifies the immutable v04 BLEND/GLB hashes before
+starting. Original v04 geodata stays intact in the scene; added building
+continuations, tree visuals, and overlap-partitioned display surfaces are
+separate objects. The new flat ground plane is presentation-only and is not
+measured terrain.
+
+```powershell
+python scripts/download_phase3d_data.py
+python scripts/inspect_phase3d_plateau.py
+python scripts/convert_phase3d_buildings.py
+python scripts/prepare_phase3d_features.py
+python scripts/prepare_phase3d_display_surfaces.py
+python scripts/build_phase3d.py
+python scripts/render_phase3d_previews.py
+python scripts/validate_phase3d.py
+```
+
+The outputs are `output/KIBA_REAL_CITY_v05.blend`,
+`output/KIBA_REAL_CITY_v05.glb`, `output/geo_reference_v05.json`, the Phase 3D
+JSON/Markdown report, four Blender renders (overview, museum, Kiba Park Bridge,
+and top view), and an OSM-vector map comparing old/new extents. The extent map
+includes OpenStreetMap attribution and does not use GSI map tiles. Data-derived
+outputs, source extracts, and previews remain local; PLATEAU dataset-specific
+terms and independent access to the ODbL text remain unverified. See
+[LICENSE_DATA.md](LICENSE_DATA.md) before distributing them. The validation
+compares per-object source IDs and world-space vertex/face hashes between v04
+and v05, checks the original tree positions, and reimports the GLB.
