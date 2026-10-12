@@ -1,0 +1,23 @@
+{
+  "project_name": "KIBA REAL CITY",
+  "location_name": "Kiba Park, Koto City, Tokyo, Japan",
+  "center": {"latitude": 35.67455, "longitude": 139.8079},
+  "source_crs": "EPSG:6677",
+  "local_crs": "EPSG:6677",
+  "vertical_datum": "Source CityGML Z; datum to be confirmed from the downloaded package metadata",
+  "extent_m": 500,
+  "dataset": {
+    "name": "Project PLATEAU Tokyo Koto City 3D City Model",
+    "release_year": null,
+    "lod": "LOD1 preferred; source value recorded when present",
+    "license": "Confirm from the official source package metadata",
+    "source_urls": ["https://www.mlit.go.jp/plateau/", "https://www.geospatial.jp/"]
+  },
+  "input_dir": "data/raw",
+  "processed_file": "data/processed/buildings.json",
+  "blend_file": "output/KIBA_REAL_CITY_v01.blend",
+  "glb_file": "output/KIBA_REAL_CITY_v01.glb",
+  "reference_file": "output/geo_reference.json",
+  "report_json": "reports/generation_report.json",
+  "report_markdown": "reports/generation_report.md"
+}
