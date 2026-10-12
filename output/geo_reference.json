@@ -1,0 +1,30 @@
+{
+  "location": "Kiba Park, Koto City, Tokyo, Japan",
+  "center_wgs84": {
+    "latitude": 35.67455,
+    "longitude": 139.8079
+  },
+  "center_projected_m": [
+    -2302.317826321731,
+    -36106.717222697174
+  ],
+  "local_crs": "EPSG:6677",
+  "vertical_datum": "JGD2011 gravity-related height from EPSG:6697 source coordinates",
+  "extent_m": 500,
+  "mesh_codes_1km": [
+    "53394604",
+    "53394614"
+  ],
+  "clipping": "Building footprint polygons intersecting the 500 m square are clipped to its boundary; elevations/heights are preserved as source values.",
+  "dataset": {
+    "name": "Project PLATEAU Tokyo Koto City 3D City Model",
+    "release_year": 2023,
+    "lod": "LOD1 preferred; source value recorded when present",
+    "license": "Confirm from the official source package metadata",
+    "source_urls": [
+      "https://www.geospatial.jp/ckan/dataset/plateau-13108-koto-ku-2023",
+      "https://api.plateauview.mlit.go.jp/datacatalog/plateau-datasets",
+      "https://api.plateauview.mlit.go.jp/datacatalog/citygml/r:139.805137,35.672296,139.810663,35.676804"
+    ]
+  }
+}

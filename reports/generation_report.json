@@ -1,0 +1,4091 @@
+{
+  "status": "converted",
+  "dataset": {
+    "name": "Project PLATEAU Tokyo Koto City 3D City Model",
+    "release_year": 2023,
+    "lod": "LOD1 preferred; source value recorded when present",
+    "license": "Confirm from the official source package metadata",
+    "source_urls": [
+      "https://www.geospatial.jp/ckan/dataset/plateau-13108-koto-ku-2023",
+      "https://api.plateauview.mlit.go.jp/datacatalog/plateau-datasets",
+      "https://api.plateauview.mlit.go.jp/datacatalog/citygml/r:139.805137,35.672296,139.810663,35.676804"
+    ]
+  },
+  "source_files": [
+    "data/raw/53394604_bldg_6697_op.gml",
+    "data/raw/53394614_bldg_6697_op.gml"
+  ],
+  "source_file_details": [
+    {
+      "path": "data/raw/53394604_bldg_6697_op.gml",
+      "bytes": 34438104
+    },
+    {
+      "path": "data/raw/53394614_bldg_6697_op.gml",
+      "bytes": 36019668
+    }
+  ],
+  "source_archives": [
+    {
+      "path": "data/raw/53394604_bldg_6697_op.zip",
+      "bytes": 1664984
+    },
+    {
+      "path": "data/raw/53394614_bldg_6697_op.zip",
+      "bytes": 1300570
+    }
+  ],
+  "source_crs": [
+    "EPSG:6697"
+  ],
+  "citygml_spec_versions": [
+    "2.0"
+  ],
+  "plateau_iur_schema_versions": [
+    "3.0"
+  ],
+  "source_axis_order": "EPSG:6697 north/east/up source ordinates are reordered to east/north before projection",
+  "coordinate_precision": {
+    "stored_xy_decimals_m": 4,
+    "max_xy_rounding_error_m": 3.467022046436684e-05
+  },
+  "area": {
+    "location": "Kiba Park, Koto City, Tokyo, Japan",
+    "center_wgs84": {
+      "latitude": 35.67455,
+      "longitude": 139.8079
+    },
+    "center_projected_m": [
+      -2302.317826321731,
+      -36106.717222697174
+    ],
+    "local_crs": "EPSG:6677",
+    "vertical_datum": "JGD2011 gravity-related height from EPSG:6697 source coordinates",
+    "extent_m": 500,
+    "mesh_codes_1km": [
+      "53394604",
+      "53394614"
+    ],
+    "clipping": "Building footprint polygons intersecting the 500 m square are clipped to its boundary; elevations/heights are preserved as source values.",
+    "dataset": {
+      "name": "Project PLATEAU Tokyo Koto City 3D City Model",
+      "release_year": 2023,
+      "lod": "LOD1 preferred; source value recorded when present",
+      "license": "Confirm from the official source package metadata",
+      "source_urls": [
+        "https://www.geospatial.jp/ckan/dataset/plateau-13108-koto-ku-2023",
+        "https://api.plateauview.mlit.go.jp/datacatalog/plateau-datasets",
+        "https://api.plateauview.mlit.go.jp/datacatalog/citygml/r:139.805137,35.672296,139.810663,35.676804"
+      ]
+    }
+  },
+  "building_features_in_source": 6023,
+  "buildings_in_extent": 233,
+  "building_metrics": {
+    "lod1_height_min_m": 3.0,
+    "lod1_height_max_m": 60.007,
+    "lod1_height_mean_m": 9.818,
+    "base_z_min_m": -0.541,
+    "base_z_max_m": 3.03,
+    "footprint_polygon_count": 233,
+    "local_footprint_bounds_m": [
+      -250.0,
+      -250.0,
+      250.0,
+      250.0
+    ]
+  },
+  "building_records": [
+    {
+      "citygml_id": "bldg_8982236e-d07b-487e-b52c-1a5633cf1fc6",
+      "centroid_local_m": [
+        -176.5722,
+        36.0772
+      ],
+      "footprint_bounds_local_m": [
+        -178.6922,
+        30.2172,
+        -174.4522,
+        41.9372
+      ],
+      "base_z_m": 1.931,
+      "lod1_height_m": 9.009,
+      "measuredHeight_attribute_m": 27.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2f872f4e-b55c-4f83-a464-2ae43533a1f0",
+      "centroid_local_m": [
+        209.0029,
+        -185.9405
+      ],
+      "footprint_bounds_local_m": [
+        199.4978,
+        -193.3728,
+        218.7978,
+        -178.1028
+      ],
+      "base_z_m": 0.34,
+      "lod1_height_m": 14.77,
+      "measuredHeight_attribute_m": 20.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cbecb808-a4b7-4c60-9700-d851e38a1bd9",
+      "centroid_local_m": [
+        -159.2097,
+        0.092
+      ],
+      "footprint_bounds_local_m": [
+        -167.2522,
+        -1.5828,
+        -151.1622,
+        1.7672
+      ],
+      "base_z_m": -0.13,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f9f6e2ba-53f5-49cc-b992-2b3ba790faaa",
+      "centroid_local_m": [
+        -57.0822,
+        -132.5478
+      ],
+      "footprint_bounds_local_m": [
+        -58.1722,
+        -133.7928,
+        -55.9922,
+        -131.3028
+      ],
+      "base_z_m": 2.986,
+      "lod1_height_m": 3.574,
+      "measuredHeight_attribute_m": 3.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3318b551-a5ac-48e1-ab0a-5d2331375d1d",
+      "centroid_local_m": [
+        -221.0895,
+        -245.1545
+      ],
+      "footprint_bounds_local_m": [
+        -230.9722,
+        -250.0,
+        -211.5043,
+        -237.0628
+      ],
+      "base_z_m": 1.361,
+      "lod1_height_m": 34.639,
+      "measuredHeight_attribute_m": 39.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_719f147d-6a95-47b2-b0b1-900c73292b70",
+      "centroid_local_m": [
+        235.6178,
+        -196.8428
+      ],
+      "footprint_bounds_local_m": [
+        233.0378,
+        -199.0628,
+        238.1978,
+        -194.6228
+      ],
+      "base_z_m": 0.19,
+      "lod1_height_m": 3.91,
+      "measuredHeight_attribute_m": 4.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_09975eab-06dc-42f8-8342-799cda87b493",
+      "centroid_local_m": [
+        -119.2766,
+        0.1948
+      ],
+      "footprint_bounds_local_m": [
+        -121.3522,
+        -2.6428,
+        -117.2022,
+        3.0372
+      ],
+      "base_z_m": 1.597,
+      "lod1_height_m": 3.123,
+      "measuredHeight_attribute_m": 4.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f23676f9-7408-4854-817b-9a8cb9bd8985",
+      "centroid_local_m": [
+        -185.6613,
+        -125.1706
+      ],
+      "footprint_bounds_local_m": [
+        -188.5122,
+        -127.7128,
+        -182.8122,
+        -122.6328
+      ],
+      "base_z_m": 0.88,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_1d46fe07-61cd-4a32-ba15-6f181b86a0d2",
+      "centroid_local_m": [
+        -170.7047,
+        23.0069
+      ],
+      "footprint_bounds_local_m": [
+        -182.5322,
+        15.9772,
+        -159.6722,
+        29.4572
+      ],
+      "base_z_m": 1.86,
+      "lod1_height_m": 5.49,
+      "measuredHeight_attribute_m": 9.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c9b81293-2df5-4d19-af8f-adf88d4531ad",
+      "centroid_local_m": [
+        19.5462,
+        -80.6543
+      ],
+      "footprint_bounds_local_m": [
+        1.7078,
+        -98.1328,
+        38.5478,
+        -62.2128
+      ],
+      "base_z_m": 2.945,
+      "lod1_height_m": 4.515,
+      "measuredHeight_attribute_m": 9.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b581e0dc-4a3f-43f1-bc69-400798f12fb0",
+      "centroid_local_m": [
+        -196.0122,
+        -151.7928
+      ],
+      "footprint_bounds_local_m": [
+        -201.5522,
+        -156.9728,
+        -190.4722,
+        -146.6128
+      ],
+      "base_z_m": 0.87,
+      "lod1_height_m": 7.06,
+      "measuredHeight_attribute_m": 9.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ec52e5b7-35aa-4393-9ac2-b61a03d747bb",
+      "centroid_local_m": [
+        213.9929,
+        -132.4445
+      ],
+      "footprint_bounds_local_m": [
+        210.6978,
+        -137.0028,
+        217.2878,
+        -127.8828
+      ],
+      "base_z_m": 1.75,
+      "lod1_height_m": 4.55,
+      "measuredHeight_attribute_m": 6.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_0c914a8c-dc27-4777-bd4c-f0a0f1532344",
+      "centroid_local_m": [
+        242.5978,
+        -190.6128
+      ],
+      "footprint_bounds_local_m": [
+        239.5578,
+        -195.0728,
+        245.6378,
+        -186.1528
+      ],
+      "base_z_m": -0.206,
+      "lod1_height_m": 6.706,
+      "measuredHeight_attribute_m": 7.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9a99f86f-2121-4201-8187-0b700f305364",
+      "centroid_local_m": [
+        -247.5305,
+        42.7934
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        34.1272,
+        -243.7022,
+        50.176
+      ],
+      "base_z_m": 0.86,
+      "lod1_height_m": 21.16,
+      "measuredHeight_attribute_m": 23.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_56eb754b-9afa-4fb4-a064-d5f54c24ade3",
+      "centroid_local_m": [
+        203.1516,
+        -213.5848
+      ],
+      "footprint_bounds_local_m": [
+        200.1878,
+        -215.8228,
+        206.1178,
+        -211.3428
+      ],
+      "base_z_m": 0.87,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_db999d57-4224-45d6-8fb7-9227604d393c",
+      "centroid_local_m": [
+        241.3128,
+        -198.2378
+      ],
+      "footprint_bounds_local_m": [
+        239.0878,
+        -200.4328,
+        243.5378,
+        -196.0428
+      ],
+      "base_z_m": -0.067,
+      "lod1_height_m": 5.977,
+      "measuredHeight_attribute_m": 6.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cd091063-602d-48a0-bcbe-b7df37b019a5",
+      "centroid_local_m": [
+        -120.6772,
+        24.5172
+      ],
+      "footprint_bounds_local_m": [
+        -125.1422,
+        16.5772,
+        -116.2122,
+        32.4572
+      ],
+      "base_z_m": 1.519,
+      "lod1_height_m": 22.851,
+      "measuredHeight_attribute_m": 29.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_af76ead5-066b-4322-80dc-ea1dc87322a4",
+      "centroid_local_m": [
+        221.7764,
+        -158.7207
+      ],
+      "footprint_bounds_local_m": [
+        216.6178,
+        -164.4928,
+        226.7878,
+        -152.9128
+      ],
+      "base_z_m": 0.676,
+      "lod1_height_m": 10.034,
+      "measuredHeight_attribute_m": 14.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_88d47d77-af9b-44c4-b053-1c0538c2815d",
+      "centroid_local_m": [
+        -136.1787,
+        -104.4506
+      ],
+      "footprint_bounds_local_m": [
+        -140.2322,
+        -107.4028,
+        -132.0822,
+        -101.4928
+      ],
+      "base_z_m": 0.769,
+      "lod1_height_m": 3.901,
+      "measuredHeight_attribute_m": 4.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e94946a0-8675-48f1-95ad-3e1196f8ef0b",
+      "centroid_local_m": [
+        -228.1222,
+        -69.7978
+      ],
+      "footprint_bounds_local_m": [
+        -233.3222,
+        -76.4928,
+        -222.9222,
+        -63.1028
+      ],
+      "base_z_m": 0.321,
+      "lod1_height_m": 14.899,
+      "measuredHeight_attribute_m": 15.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_a5b796fb-8e5e-480f-9bec-936da8a7964a",
+      "centroid_local_m": [
+        248.9487,
+        -172.369
+      ],
+      "footprint_bounds_local_m": [
+        247.2078,
+        -177.0681,
+        250.0,
+        -166.4228
+      ],
+      "base_z_m": -0.14,
+      "lod1_height_m": 8.87,
+      "measuredHeight_attribute_m": 9.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_04daef4f-3bda-4c4c-b419-16f1364f8378",
+      "centroid_local_m": [
+        243.8917,
+        -249.1404
+      ],
+      "footprint_bounds_local_m": [
+        239.5971,
+        -250.0,
+        250.0,
+        -247.5428
+      ],
+      "base_z_m": -0.47,
+      "lod1_height_m": 6.44,
+      "measuredHeight_attribute_m": 8.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9e19919a-5025-47dd-97b8-6243529d885b",
+      "centroid_local_m": [
+        122.5643,
+        -158.5108
+      ],
+      "footprint_bounds_local_m": [
+        117.6478,
+        -165.8328,
+        127.9278,
+        -152.0528
+      ],
+      "base_z_m": 1.72,
+      "lod1_height_m": 3.98,
+      "measuredHeight_attribute_m": 10.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_add83848-ab4d-448d-aef1-5b9600f06420",
+      "centroid_local_m": [
+        -156.4813,
+        -147.9309
+      ],
+      "footprint_bounds_local_m": [
+        -167.4922,
+        -164.1528,
+        -144.8022,
+        -132.5728
+      ],
+      "base_z_m": 0.816,
+      "lod1_height_m": 6.424,
+      "measuredHeight_attribute_m": 8.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_8c91d6b7-4699-4328-93ca-387f8765b718",
+      "centroid_local_m": [
+        -172.438,
+        -214.6028
+      ],
+      "footprint_bounds_local_m": [
+        -178.1122,
+        -219.5628,
+        -166.7122,
+        -209.1928
+      ],
+      "base_z_m": 0.972,
+      "lod1_height_m": 15.138,
+      "measuredHeight_attribute_m": 18.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_1e43f0f9-b0a2-4552-8299-6b245d7e0793",
+      "centroid_local_m": [
+        -171.2731,
+        -246.3614
+      ],
+      "footprint_bounds_local_m": [
+        -176.8922,
+        -250.0,
+        -165.5765,
+        -241.5528
+      ],
+      "base_z_m": 1.219,
+      "lod1_height_m": 9.911,
+      "measuredHeight_attribute_m": 11.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_24434cce-580f-459b-ad4c-c6484a17e65a",
+      "centroid_local_m": [
+        219.9145,
+        -248.5933
+      ],
+      "footprint_bounds_local_m": [
+        215.5078,
+        -250.0,
+        225.1878,
+        -246.3828
+      ],
+      "base_z_m": 0.33,
+      "lod1_height_m": 8.06,
+      "measuredHeight_attribute_m": 8.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5c6550da-7e86-4a00-9f88-da0b90014cdd",
+      "centroid_local_m": [
+        221.778,
+        -240.2634
+      ],
+      "footprint_bounds_local_m": [
+        214.1878,
+        -247.0328,
+        228.3178,
+        -233.1428
+      ],
+      "base_z_m": -0.113,
+      "lod1_height_m": 10.693,
+      "measuredHeight_attribute_m": 15.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_660c18c6-7901-4377-9144-e70274362aa4",
+      "centroid_local_m": [
+        -205.3972,
+        39.0172
+      ],
+      "footprint_bounds_local_m": [
+        -211.2322,
+        30.2272,
+        -199.5622,
+        47.8072
+      ],
+      "base_z_m": 1.34,
+      "lod1_height_m": 15.8,
+      "measuredHeight_attribute_m": 20.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_112cfb70-082c-406f-ae67-00c89a720e4b",
+      "centroid_local_m": [
+        211.0086,
+        -195.3301
+      ],
+      "footprint_bounds_local_m": [
+        206.2978,
+        -198.9728,
+        215.7178,
+        -191.6828
+      ],
+      "base_z_m": 0.343,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d7a6d02b-530a-4e7f-8955-f6502a0b9748",
+      "centroid_local_m": [
+        -232.3179,
+        35.2152
+      ],
+      "footprint_bounds_local_m": [
+        -235.2622,
+        28.6272,
+        -229.1422,
+        40.9872
+      ],
+      "base_z_m": 1.087,
+      "lod1_height_m": 7.023,
+      "measuredHeight_attribute_m": 8.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_02875dcf-38f6-455b-a9df-5bdcd20edc65",
+      "centroid_local_m": [
+        140.9465,
+        -172.8789
+      ],
+      "footprint_bounds_local_m": [
+        139.2178,
+        -174.9128,
+        142.6778,
+        -170.8728
+      ],
+      "base_z_m": 2.0,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_fa9e672b-6714-46fd-9efa-0ecc0ce9c90e",
+      "centroid_local_m": [
+        -172.5952,
+        -185.033
+      ],
+      "footprint_bounds_local_m": [
+        -176.6022,
+        -186.7328,
+        -168.5922,
+        -183.3328
+      ],
+      "base_z_m": 0.82,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_35e1feed-609a-4798-9e9b-84a1e95efb55",
+      "centroid_local_m": [
+        43.0107,
+        -120.7309
+      ],
+      "footprint_bounds_local_m": [
+        41.4678,
+        -123.5228,
+        44.5578,
+        -117.9428
+      ],
+      "base_z_m": 2.33,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_15649898-7da4-485f-9373-90feb5475188",
+      "centroid_local_m": [
+        192.5433,
+        -242.034
+      ],
+      "footprint_bounds_local_m": [
+        182.0583,
+        -250.0,
+        202.5978,
+        -232.1628
+      ],
+      "base_z_m": 0.26,
+      "lod1_height_m": 16.69,
+      "measuredHeight_attribute_m": 20.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_76ed1a11-40ab-44c0-bcb8-eb3607e4c67e",
+      "centroid_local_m": [
+        216.1415,
+        -153.6001
+      ],
+      "footprint_bounds_local_m": [
+        214.0778,
+        -155.5328,
+        218.2078,
+        -151.6728
+      ],
+      "base_z_m": 0.519,
+      "lod1_height_m": 3.181,
+      "measuredHeight_attribute_m": 3.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ae082da0-badc-4b90-84f2-bcfa9275f51a",
+      "centroid_local_m": [
+        -202.23,
+        -151.6794
+      ],
+      "footprint_bounds_local_m": [
+        -203.5922,
+        -153.9028,
+        -200.8722,
+        -149.4528
+      ],
+      "base_z_m": 0.88,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_fe0d6424-b8c1-4c60-868d-5ee2cecff248",
+      "centroid_local_m": [
+        -198.8472,
+        -214.0891
+      ],
+      "footprint_bounds_local_m": [
+        -205.3022,
+        -220.1428,
+        -193.5222,
+        -208.4628
+      ],
+      "base_z_m": 1.107,
+      "lod1_height_m": 7.073,
+      "measuredHeight_attribute_m": 8.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_7ee5c082-9cdc-47bd-b383-dcafcf018133",
+      "centroid_local_m": [
+        -247.3881,
+        -167.3397
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -171.6428,
+        -244.1122,
+        -163.2341
+      ],
+      "base_z_m": 0.33,
+      "lod1_height_m": 10.21,
+      "measuredHeight_attribute_m": 10.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_fc1926f9-ea5a-48ad-8e02-e43d037b6437",
+      "centroid_local_m": [
+        -149.6632,
+        -102.4326
+      ],
+      "footprint_bounds_local_m": [
+        -162.7522,
+        -126.8128,
+        -136.5722,
+        -78.0528
+      ],
+      "base_z_m": 0.8,
+      "lod1_height_m": 23.92,
+      "measuredHeight_attribute_m": 34.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c044b07a-aaf0-4e1f-8853-8bbb9bdd2893",
+      "centroid_local_m": [
+        -134.6064,
+        30.5381
+      ],
+      "footprint_bounds_local_m": [
+        -144.3822,
+        21.1672,
+        -125.3922,
+        41.4572
+      ],
+      "base_z_m": 1.032,
+      "lod1_height_m": 38.408,
+      "measuredHeight_attribute_m": 48.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_67a01d78-603b-4027-9c6a-92bf01b72c26",
+      "centroid_local_m": [
+        -132.4755,
+        -69.8454
+      ],
+      "footprint_bounds_local_m": [
+        -134.0722,
+        -70.7128,
+        -130.8822,
+        -68.9828
+      ],
+      "base_z_m": 0.83,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_eac47cdb-8291-47a4-881f-4f276e255e34",
+      "centroid_local_m": [
+        -155.6383,
+        -68.3999
+      ],
+      "footprint_bounds_local_m": [
+        -164.6522,
+        -70.2228,
+        -146.6122,
+        -66.5728
+      ],
+      "base_z_m": 0.833,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_526ca6ef-8efe-4150-b658-44f1438e97ea",
+      "centroid_local_m": [
+        234.6299,
+        -188.1508
+      ],
+      "footprint_bounds_local_m": [
+        229.7578,
+        -192.1128,
+        239.4578,
+        -184.1828
+      ],
+      "base_z_m": 0.064,
+      "lod1_height_m": 7.616,
+      "measuredHeight_attribute_m": 8.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3da937c3-b3e1-406d-82cb-a5fdfbf36e99",
+      "centroid_local_m": [
+        230.4178,
+        -195.4878
+      ],
+      "footprint_bounds_local_m": [
+        227.4378,
+        -198.1428,
+        233.3978,
+        -192.8328
+      ],
+      "base_z_m": 0.469,
+      "lod1_height_m": 3.911,
+      "measuredHeight_attribute_m": 4.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b5550eb1-89d8-4814-8ba3-e2b7d9600e43",
+      "centroid_local_m": [
+        245.4778,
+        -242.6778
+      ],
+      "footprint_bounds_local_m": [
+        241.0578,
+        -247.6628,
+        249.8978,
+        -237.6928
+      ],
+      "base_z_m": -0.475,
+      "lod1_height_m": 9.805,
+      "measuredHeight_attribute_m": 13.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e510d2a2-fcb3-4952-90fd-b10d1eb17fc1",
+      "centroid_local_m": [
+        -183.2114,
+        -190.5945
+      ],
+      "footprint_bounds_local_m": [
+        -214.7122,
+        -201.0828,
+        -151.1122,
+        -179.9428
+      ],
+      "base_z_m": 0.67,
+      "lod1_height_m": 10.35,
+      "measuredHeight_attribute_m": 14.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f5b2c90c-794b-478a-9d09-f1a8e9e16fed",
+      "centroid_local_m": [
+        204.0387,
+        -209.9403
+      ],
+      "footprint_bounds_local_m": [
+        201.8778,
+        -212.3628,
+        206.1778,
+        -207.5128
+      ],
+      "base_z_m": 0.64,
+      "lod1_height_m": 9.85,
+      "measuredHeight_attribute_m": 12.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_65372410-dcfd-4213-95d0-4c6158bf058d",
+      "centroid_local_m": [
+        218.8992,
+        -130.6208
+      ],
+      "footprint_bounds_local_m": [
+        214.6778,
+        -135.4928,
+        222.4478,
+        -126.2228
+      ],
+      "base_z_m": 1.89,
+      "lod1_height_m": 4.92,
+      "measuredHeight_attribute_m": 6.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e87dc793-341e-4d53-98ef-1278b33232ca",
+      "centroid_local_m": [
+        247.4549,
+        -194.8652
+      ],
+      "footprint_bounds_local_m": [
+        244.2078,
+        -201.8528,
+        250.0,
+        -187.4528
+      ],
+      "base_z_m": -0.39,
+      "lod1_height_m": 6.93,
+      "measuredHeight_attribute_m": 9.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_15f24580-e204-41ee-aa1b-1b47f42fa1e4",
+      "centroid_local_m": [
+        -243.8912,
+        -143.9147
+      ],
+      "footprint_bounds_local_m": [
+        -248.7722,
+        -148.5428,
+        -239.0122,
+        -139.2928
+      ],
+      "base_z_m": 0.525,
+      "lod1_height_m": 9.835,
+      "measuredHeight_attribute_m": 11.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d779401b-4ec7-418c-bc6e-faf1c82801c1",
+      "centroid_local_m": [
+        -239.9472,
+        -124.7828
+      ],
+      "footprint_bounds_local_m": [
+        -244.4722,
+        -128.8828,
+        -235.4222,
+        -120.6828
+      ],
+      "base_z_m": 0.251,
+      "lod1_height_m": 13.099,
+      "measuredHeight_attribute_m": 14.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f583bcca-51dc-45de-a369-c68dc4b06b6d",
+      "centroid_local_m": [
+        205.4228,
+        -199.3278
+      ],
+      "footprint_bounds_local_m": [
+        197.3278,
+        -203.9628,
+        213.5178,
+        -194.6928
+      ],
+      "base_z_m": 0.422,
+      "lod1_height_m": 11.878,
+      "measuredHeight_attribute_m": 13.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4cb24c09-4efe-42d9-ac32-05c65a4837ae",
+      "centroid_local_m": [
+        199.8114,
+        -192.0906
+      ],
+      "footprint_bounds_local_m": [
+        198.1278,
+        -194.8928,
+        201.4378,
+        -189.2528
+      ],
+      "base_z_m": 0.631,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ca53fd06-1cdb-46c0-948e-b3069341b8b3",
+      "centroid_local_m": [
+        244.2857,
+        -171.6731
+      ],
+      "footprint_bounds_local_m": [
+        240.7778,
+        -178.9628,
+        248.0578,
+        -164.7628
+      ],
+      "base_z_m": -0.078,
+      "lod1_height_m": 4.728,
+      "measuredHeight_attribute_m": 10.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_55705687-50b8-4d64-adfc-d22d27194128",
+      "centroid_local_m": [
+        249.4526,
+        -245.9513
+      ],
+      "footprint_bounds_local_m": [
+        248.3578,
+        -248.6418,
+        250.0,
+        -240.9393
+      ],
+      "base_z_m": -0.541,
+      "lod1_height_m": 7.641,
+      "measuredHeight_attribute_m": 9.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ebabe618-8b15-4b17-b685-821c90287d8d",
+      "centroid_local_m": [
+        -216.4772,
+        -12.9778
+      ],
+      "footprint_bounds_local_m": [
+        -221.5622,
+        -19.7228,
+        -211.3922,
+        -6.2328
+      ],
+      "base_z_m": 0.71,
+      "lod1_height_m": 10.61,
+      "measuredHeight_attribute_m": 11.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_eebb88c8-c7da-4b4a-b0db-208d8387a8c8",
+      "centroid_local_m": [
+        -186.1935,
+        -244.3503
+      ],
+      "footprint_bounds_local_m": [
+        -194.8922,
+        -250.0,
+        -177.6209,
+        -238.4328
+      ],
+      "base_z_m": 1.23,
+      "lod1_height_m": 8.94,
+      "measuredHeight_attribute_m": 10.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_69b48df4-f454-49d7-a20e-ef1938f06d12",
+      "centroid_local_m": [
+        -156.7779,
+        -212.1549
+      ],
+      "footprint_bounds_local_m": [
+        -164.2522,
+        -219.3028,
+        -148.6022,
+        -205.7528
+      ],
+      "base_z_m": 0.83,
+      "lod1_height_m": 5.48,
+      "measuredHeight_attribute_m": 9.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e20dd639-6890-4e36-8b31-62c444e9ac08",
+      "centroid_local_m": [
+        -237.8646,
+        -114.7145
+      ],
+      "footprint_bounds_local_m": [
+        -242.6522,
+        -118.9428,
+        -232.9022,
+        -110.0428
+      ],
+      "base_z_m": 0.364,
+      "lod1_height_m": 8.186,
+      "measuredHeight_attribute_m": 10.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_da79949d-b1e3-4a83-a0ea-d9b52c5ed613",
+      "centroid_local_m": [
+        -191.4118,
+        -99.0047
+      ],
+      "footprint_bounds_local_m": [
+        -202.4422,
+        -125.7928,
+        -180.5322,
+        -70.9428
+      ],
+      "base_z_m": 0.829,
+      "lod1_height_m": 4.131,
+      "measuredHeight_attribute_m": 4.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_bee350ff-41ad-4e35-b39c-d37dc69b0ef5",
+      "centroid_local_m": [
+        -225.5993,
+        -195.1213
+      ],
+      "footprint_bounds_local_m": [
+        -227.4122,
+        -197.8528,
+        -223.7822,
+        -192.3928
+      ],
+      "base_z_m": -0.465,
+      "lod1_height_m": 3.625,
+      "measuredHeight_attribute_m": 3.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_354d287c-c348-47dd-9cd9-e51b0ca1955d",
+      "centroid_local_m": [
+        240.8155,
+        -220.03
+      ],
+      "footprint_bounds_local_m": [
+        238.1478,
+        -223.5928,
+        243.4778,
+        -216.5128
+      ],
+      "base_z_m": -0.22,
+      "lod1_height_m": 3.25,
+      "measuredHeight_attribute_m": 4.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_60d007b8-6bf0-4c08-9de3-d9f0c3a9a733",
+      "centroid_local_m": [
+        249.0525,
+        -211.9303
+      ],
+      "footprint_bounds_local_m": [
+        247.1578,
+        -216.5725,
+        250.0,
+        -203.3828
+      ],
+      "base_z_m": -0.082,
+      "lod1_height_m": 6.842,
+      "measuredHeight_attribute_m": 8.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3ae40650-8e8b-4773-b698-9e21b3d47b2c",
+      "centroid_local_m": [
+        -239.8947,
+        36.6477
+      ],
+      "footprint_bounds_local_m": [
+        -243.7622,
+        30.4472,
+        -235.4022,
+        42.1572
+      ],
+      "base_z_m": 0.936,
+      "lod1_height_m": 12.704,
+      "measuredHeight_attribute_m": 13.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_63134063-6ad1-4e37-bbd4-6dc2d93f66dc",
+      "centroid_local_m": [
+        199.0451,
+        -205.7006
+      ],
+      "footprint_bounds_local_m": [
+        193.8978,
+        -211.1528,
+        204.1778,
+        -200.2128
+      ],
+      "base_z_m": 0.69,
+      "lod1_height_m": 10.51,
+      "measuredHeight_attribute_m": 12.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5cc6b171-c8fc-41a6-b1ae-3d532f5b3a07",
+      "centroid_local_m": [
+        218.5365,
+        -149.0707
+      ],
+      "footprint_bounds_local_m": [
+        216.9278,
+        -151.4628,
+        220.0778,
+        -147.2128
+      ],
+      "base_z_m": 0.589,
+      "lod1_height_m": 3.731,
+      "measuredHeight_attribute_m": 6.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_a9856b9e-7c71-4cc4-960e-6fb47228dbf0",
+      "centroid_local_m": [
+        -197.2889,
+        -166.205
+      ],
+      "footprint_bounds_local_m": [
+        -202.3022,
+        -169.1128,
+        -192.2722,
+        -163.2928
+      ],
+      "base_z_m": 0.84,
+      "lod1_height_m": 7.18,
+      "measuredHeight_attribute_m": 16.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_64264738-1119-4140-8730-d04326d79d6b",
+      "centroid_local_m": [
+        -145.7976,
+        -43.3477
+      ],
+      "footprint_bounds_local_m": [
+        -170.0222,
+        -62.3328,
+        -125.1822,
+        -22.1528
+      ],
+      "base_z_m": 0.973,
+      "lod1_height_m": 60.007,
+      "measuredHeight_attribute_m": 96.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b913b884-0829-4eb8-9358-f4e85cc0ce06",
+      "centroid_local_m": [
+        -160.2005,
+        -186.7661
+      ],
+      "footprint_bounds_local_m": [
+        -164.1722,
+        -188.3428,
+        -156.1722,
+        -185.1728
+      ],
+      "base_z_m": 0.867,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b1705059-a83c-4550-b6d9-6a91ed1d8f7d",
+      "centroid_local_m": [
+        239.5283,
+        -92.1986
+      ],
+      "footprint_bounds_local_m": [
+        230.3578,
+        -108.0328,
+        250.0,
+        -78.4228
+      ],
+      "base_z_m": 0.87,
+      "lod1_height_m": 6.78,
+      "measuredHeight_attribute_m": 9.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_87062bde-44cb-4646-bd68-d5fbcf9de0c3",
+      "centroid_local_m": [
+        -166.3156,
+        -170.795
+      ],
+      "footprint_bounds_local_m": [
+        -186.6522,
+        -181.7528,
+        -147.3322,
+        -160.1428
+      ],
+      "base_z_m": 0.862,
+      "lod1_height_m": 12.678,
+      "measuredHeight_attribute_m": 16.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_36cc0caa-ff95-49cc-8b69-6f7626d2ee33",
+      "centroid_local_m": [
+        244.2433,
+        -209.7107
+      ],
+      "footprint_bounds_local_m": [
+        239.9078,
+        -215.2228,
+        248.5778,
+        -204.2028
+      ],
+      "base_z_m": 0.04,
+      "lod1_height_m": 9.67,
+      "measuredHeight_attribute_m": 9.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_25a12abd-2e82-4147-96fb-2a0bf360e74c",
+      "centroid_local_m": [
+        -249.8774,
+        -87.9713
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -89.2975,
+        -249.6322,
+        -87.2735
+      ],
+      "base_z_m": 0.697,
+      "lod1_height_m": 17.043,
+      "measuredHeight_attribute_m": 24.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5d6bb229-a07f-499b-9d2f-5bbb165deb64",
+      "centroid_local_m": [
+        109.0787,
+        -75.4029
+      ],
+      "footprint_bounds_local_m": [
+        107.8778,
+        -76.5028,
+        110.2378,
+        -74.3628
+      ],
+      "base_z_m": 2.47,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b79bed80-abb5-49ba-828f-5b0b8294ca4d",
+      "centroid_local_m": [
+        -207.6634,
+        27.31
+      ],
+      "footprint_bounds_local_m": [
+        -212.5822,
+        23.0672,
+        -202.7422,
+        31.5472
+      ],
+      "base_z_m": 1.456,
+      "lod1_height_m": 12.854,
+      "measuredHeight_attribute_m": 13.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_921b1bde-4b2e-4588-a2cd-655c885804cc",
+      "centroid_local_m": [
+        237.5016,
+        -174.7429
+      ],
+      "footprint_bounds_local_m": [
+        233.5778,
+        -178.1028,
+        241.2978,
+        -171.6628
+      ],
+      "base_z_m": 0.399,
+      "lod1_height_m": 9.301,
+      "measuredHeight_attribute_m": 12.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_6ba4122e-4c36-4d51-af4b-6ffda9f55382",
+      "centroid_local_m": [
+        -147.2689,
+        32.9007
+      ],
+      "footprint_bounds_local_m": [
+        -148.6522,
+        30.9372,
+        -145.8822,
+        34.8572
+      ],
+      "base_z_m": 1.5,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_342244ee-a83c-476a-a24f-4063bd23c376",
+      "centroid_local_m": [
+        247.4913,
+        -54.6948
+      ],
+      "footprint_bounds_local_m": [
+        244.7078,
+        -56.9828,
+        250.0,
+        -52.3828
+      ],
+      "base_z_m": 0.55,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_dfb24dc3-3cac-4b45-bbfd-019eec3f47fe",
+      "centroid_local_m": [
+        -245.7943,
+        -53.0989
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -59.3828,
+        -240.5322,
+        -47.0421
+      ],
+      "base_z_m": 0.512,
+      "lod1_height_m": 17.058,
+      "measuredHeight_attribute_m": 25.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3ead46e5-dfd1-468f-8fe8-86fb6dd73bbb",
+      "centroid_local_m": [
+        -238.7539,
+        -0.767
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -4.8828,
+        -226.9722,
+        3.3899
+      ],
+      "base_z_m": 0.42,
+      "lod1_height_m": 3.24,
+      "measuredHeight_attribute_m": 4.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_df758f4c-db0b-4390-80e7-b28fdede85b9",
+      "centroid_local_m": [
+        -248.6147,
+        -181.2918
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -192.8528,
+        -245.8522,
+        -174.665
+      ],
+      "base_z_m": 0.03,
+      "lod1_height_m": 15.86,
+      "measuredHeight_attribute_m": 22.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f8a8d0d4-9e3a-4ff8-ba16-d40741fb70e3",
+      "centroid_local_m": [
+        -9.6371,
+        -89.5987
+      ],
+      "footprint_bounds_local_m": [
+        -15.5222,
+        -95.3228,
+        -2.4722,
+        -83.3028
+      ],
+      "base_z_m": 2.98,
+      "lod1_height_m": 3.43,
+      "measuredHeight_attribute_m": 12.1,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f22697be-fa5c-4b46-8ebc-cd32857557cd",
+      "centroid_local_m": [
+        233.7039,
+        -205.5326
+      ],
+      "footprint_bounds_local_m": [
+        225.6278,
+        -212.0228,
+        242.0678,
+        -198.4428
+      ],
+      "base_z_m": 0.082,
+      "lod1_height_m": 13.598,
+      "measuredHeight_attribute_m": 17.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b08fcba7-65b9-4396-b503-c337b7651b1c",
+      "centroid_local_m": [
+        -52.6269,
+        -152.4245
+      ],
+      "footprint_bounds_local_m": [
+        -57.0322,
+        -156.7828,
+        -48.2222,
+        -148.0628
+      ],
+      "base_z_m": 2.489,
+      "lod1_height_m": 4.061,
+      "measuredHeight_attribute_m": 10.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4a4d9bd0-16f4-4a12-a58f-cae4c7ddbfa2",
+      "centroid_local_m": [
+        203.2878,
+        -193.5328
+      ],
+      "footprint_bounds_local_m": [
+        200.8878,
+        -195.7328,
+        205.6878,
+        -191.3328
+      ],
+      "base_z_m": 0.6,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_68494a1e-9bf6-412b-a784-9976e3e53288",
+      "centroid_local_m": [
+        -245.4653,
+        -63.3621
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -68.4828,
+        -240.6122,
+        -58.8711
+      ],
+      "base_z_m": 0.653,
+      "lod1_height_m": 10.737,
+      "measuredHeight_attribute_m": 13.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c7098894-9614-45c9-9215-41840a16928b",
+      "centroid_local_m": [
+        -116.5066,
+        36.7715
+      ],
+      "footprint_bounds_local_m": [
+        -122.5722,
+        32.0172,
+        -110.7122,
+        41.5272
+      ],
+      "base_z_m": 1.449,
+      "lod1_height_m": 25.081,
+      "measuredHeight_attribute_m": 31.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_bbd9b0c3-af7a-4041-bcc7-2fee138ac168",
+      "centroid_local_m": [
+        -142.1072,
+        5.3722
+      ],
+      "footprint_bounds_local_m": [
+        -149.3122,
+        3.4672,
+        -134.9022,
+        7.2772
+      ],
+      "base_z_m": 0.42,
+      "lod1_height_m": 4.83,
+      "measuredHeight_attribute_m": 7.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_65366b22-db95-4670-9f14-6d4096c92ba7",
+      "centroid_local_m": [
+        -225.8262,
+        -57.0094
+      ],
+      "footprint_bounds_local_m": [
+        -231.1722,
+        -63.3728,
+        -220.2922,
+        -50.6728
+      ],
+      "base_z_m": 0.59,
+      "lod1_height_m": 9.56,
+      "measuredHeight_attribute_m": 12.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_11fca340-f45e-45f3-8f7f-a2bf59809af0",
+      "centroid_local_m": [
+        -186.8138,
+        -237.3435
+      ],
+      "footprint_bounds_local_m": [
+        -195.0822,
+        -238.9528,
+        -178.6222,
+        -235.7228
+      ],
+      "base_z_m": 1.306,
+      "lod1_height_m": 5.064,
+      "measuredHeight_attribute_m": 9.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_22c08f6f-9d54-4c63-a74f-9c5d6e67a350",
+      "centroid_local_m": [
+        -213.4243,
+        1.5625
+      ],
+      "footprint_bounds_local_m": [
+        -217.3022,
+        -0.7628,
+        -209.5422,
+        3.8872
+      ],
+      "base_z_m": 1.259,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_51feaec2-cd61-4a2a-bd62-78f1846ff3d9",
+      "centroid_local_m": [
+        -59.1872,
+        -14.7978
+      ],
+      "footprint_bounds_local_m": [
+        -66.4222,
+        -21.7628,
+        -51.9522,
+        -7.8328
+      ],
+      "base_z_m": 2.16,
+      "lod1_height_m": 4.02,
+      "measuredHeight_attribute_m": 5.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_dd6c7236-7582-4fb9-9b15-c4be8cf2f835",
+      "centroid_local_m": [
+        23.522,
+        -21.739
+      ],
+      "footprint_bounds_local_m": [
+        21.0478,
+        -24.4528,
+        25.9978,
+        -19.0228
+      ],
+      "base_z_m": 2.789,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f6fa3460-9622-4f1a-acab-f04721a3b0fd",
+      "centroid_local_m": [
+        -32.0772,
+        -62.1778
+      ],
+      "footprint_bounds_local_m": [
+        -33.5122,
+        -63.4328,
+        -30.6422,
+        -60.9228
+      ],
+      "base_z_m": 2.973,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_bb844bec-a461-4ea8-8e6f-b101fa3322b1",
+      "centroid_local_m": [
+        139.9008,
+        -169.0413
+      ],
+      "footprint_bounds_local_m": [
+        137.3178,
+        -171.2328,
+        142.4778,
+        -166.8528
+      ],
+      "base_z_m": 1.799,
+      "lod1_height_m": 3.601,
+      "measuredHeight_attribute_m": 4.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_710979f2-e18b-4364-9939-8eb84c9b2227",
+      "centroid_local_m": [
+        -230.5646,
+        -83.4012
+      ],
+      "footprint_bounds_local_m": [
+        -237.0422,
+        -90.7328,
+        -224.0722,
+        -76.0728
+      ],
+      "base_z_m": -0.07,
+      "lod1_height_m": 18.55,
+      "measuredHeight_attribute_m": 21.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_22f76193-0a5a-4820-9527-f13432b5251d",
+      "centroid_local_m": [
+        -182.6672,
+        7.9722
+      ],
+      "footprint_bounds_local_m": [
+        -186.2522,
+        4.4172,
+        -179.0822,
+        11.5272
+      ],
+      "base_z_m": 1.18,
+      "lod1_height_m": 3.37,
+      "measuredHeight_attribute_m": 3.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_efef14e6-6d49-4112-957d-88ff6e0bd45c",
+      "centroid_local_m": [
+        -184.7999,
+        -214.3678
+      ],
+      "footprint_bounds_local_m": [
+        -191.1722,
+        -220.1928,
+        -178.9022,
+        -207.5228
+      ],
+      "base_z_m": 0.96,
+      "lod1_height_m": 17.12,
+      "measuredHeight_attribute_m": 23.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_0a33f237-0daa-4256-ac84-c4fda5bc2873",
+      "centroid_local_m": [
+        52.0228,
+        -110.0678
+      ],
+      "footprint_bounds_local_m": [
+        50.2978,
+        -112.2328,
+        53.7478,
+        -107.9028
+      ],
+      "base_z_m": 2.62,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2a77a223-97cd-483d-b23a-e0bf72148601",
+      "centroid_local_m": [
+        249.6826,
+        -200.3333
+      ],
+      "footprint_bounds_local_m": [
+        249.0478,
+        -201.9575,
+        250.0,
+        -197.2897
+      ],
+      "base_z_m": -0.345,
+      "lod1_height_m": 9.425,
+      "measuredHeight_attribute_m": 11.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_a5a3c778-c1da-4638-9a8b-ed26015f55de",
+      "centroid_local_m": [
+        -181.9622,
+        -130.6378
+      ],
+      "footprint_bounds_local_m": [
+        -189.6422,
+        -133.0528,
+        -174.2822,
+        -128.2228
+      ],
+      "base_z_m": 0.84,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_180f3b62-eafc-4d2a-ae5f-7fa9a40cd26e",
+      "centroid_local_m": [
+        -224.4452,
+        -218.4279
+      ],
+      "footprint_bounds_local_m": [
+        -225.2722,
+        -219.2328,
+        -223.6122,
+        -217.6528
+      ],
+      "base_z_m": 2.043,
+      "lod1_height_m": 3.487,
+      "measuredHeight_attribute_m": 3.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_94cc4bb9-1d25-4aa1-ba90-3f70a230fdc8",
+      "centroid_local_m": [
+        -246.2015,
+        -155.9537
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -163.2128,
+        -241.2022,
+        -149.1828
+      ],
+      "base_z_m": 0.2,
+      "lod1_height_m": 10.8,
+      "measuredHeight_attribute_m": 14.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e98e0871-78b3-45d5-ade7-7412f90f6c25",
+      "centroid_local_m": [
+        -223.5885,
+        37.87
+      ],
+      "footprint_bounds_local_m": [
+        -228.5222,
+        34.3372,
+        -218.6522,
+        41.4072
+      ],
+      "base_z_m": 1.401,
+      "lod1_height_m": 11.659,
+      "measuredHeight_attribute_m": 14.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4a61e00f-c3bc-40fd-b875-973a2b766573",
+      "centroid_local_m": [
+        -214.2597,
+        -189.1485
+      ],
+      "footprint_bounds_local_m": [
+        -215.6122,
+        -191.0828,
+        -212.9022,
+        -187.2128
+      ],
+      "base_z_m": 1.022,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ac39f6e4-0852-408d-ae34-536c09f7a2f9",
+      "centroid_local_m": [
+        244.9279,
+        -159.0086
+      ],
+      "footprint_bounds_local_m": [
+        238.2278,
+        -165.5086,
+        250.0,
+        -151.4528
+      ],
+      "base_z_m": 0.447,
+      "lod1_height_m": 27.973,
+      "measuredHeight_attribute_m": 34.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_84b9441d-d12b-4f66-8636-35383cbf63cc",
+      "centroid_local_m": [
+        234.0898,
+        -244.3842
+      ],
+      "footprint_bounds_local_m": [
+        226.9016,
+        -250.0,
+        240.3078,
+        -236.8528
+      ],
+      "base_z_m": -0.37,
+      "lod1_height_m": 17.49,
+      "measuredHeight_attribute_m": 27.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b78ded4c-a2a0-49db-ab29-f188299e9891",
+      "centroid_local_m": [
+        -236.3453,
+        49.4471
+      ],
+      "footprint_bounds_local_m": [
+        -242.4622,
+        47.0372,
+        -230.2322,
+        51.8572
+      ],
+      "base_z_m": 1.304,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_96fb0f82-1720-4e9f-a21c-98903b471c98",
+      "centroid_local_m": [
+        -234.7278,
+        -100.0021
+      ],
+      "footprint_bounds_local_m": [
+        -241.0122,
+        -110.4428,
+        -228.4422,
+        -89.5628
+      ],
+      "base_z_m": -0.0,
+      "lod1_height_m": 12.32,
+      "measuredHeight_attribute_m": 18.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cafeb20d-6eb9-4250-a921-800522eab745",
+      "centroid_local_m": [
+        -160.432,
+        -241.3997
+      ],
+      "footprint_bounds_local_m": [
+        -165.2722,
+        -250.0,
+        -155.5046,
+        -232.3628
+      ],
+      "base_z_m": 1.03,
+      "lod1_height_m": 4.58,
+      "measuredHeight_attribute_m": 7.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_1917daaf-db1e-440f-ab15-6d8c420e6850",
+      "centroid_local_m": [
+        -241.9489,
+        -46.721
+      ],
+      "footprint_bounds_local_m": [
+        -245.7722,
+        -48.3428,
+        -238.1322,
+        -45.1028
+      ],
+      "base_z_m": 0.687,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ad67b8b7-2282-47b3-97d7-d877f559dbf7",
+      "centroid_local_m": [
+        -202.8104,
+        -242.4745
+      ],
+      "footprint_bounds_local_m": [
+        -209.3722,
+        -250.0,
+        -196.064,
+        -234.4928
+      ],
+      "base_z_m": 1.3,
+      "lod1_height_m": 19.84,
+      "measuredHeight_attribute_m": 23.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9375333b-0ff6-4d1e-a2b6-118dfacd08e1",
+      "centroid_local_m": [
+        -222.8196,
+        -42.4632
+      ],
+      "footprint_bounds_local_m": [
+        -228.5922,
+        -51.6628,
+        -217.0422,
+        -33.2628
+      ],
+      "base_z_m": 0.24,
+      "lod1_height_m": 14.4,
+      "measuredHeight_attribute_m": 15.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_05b8ad8a-c697-41dd-9e23-fad84e57fbfc",
+      "centroid_local_m": [
+        -237.7145,
+        45.331
+      ],
+      "footprint_bounds_local_m": [
+        -243.0822,
+        42.0372,
+        -231.6522,
+        48.5772
+      ],
+      "base_z_m": 1.12,
+      "lod1_height_m": 7.38,
+      "measuredHeight_attribute_m": 8.6,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_05a00fa0-4440-4685-9861-3892ea5658e7",
+      "centroid_local_m": [
+        -120.4602,
+        5.5497
+      ],
+      "footprint_bounds_local_m": [
+        -123.9022,
+        4.0872,
+        -117.0222,
+        7.0072
+      ],
+      "base_z_m": 1.3,
+      "lod1_height_m": 6.75,
+      "measuredHeight_attribute_m": 7.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_54533bb4-d39f-4a18-8f89-2f4cf9b2cf82",
+      "centroid_local_m": [
+        -240.755,
+        -11.3187
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -19.7228,
+        -230.2922,
+        -3.0636
+      ],
+      "base_z_m": 0.49,
+      "lod1_height_m": 25.05,
+      "measuredHeight_attribute_m": 34.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_8d5bdf87-1eba-491c-8fe8-d7ecdf32f4ff",
+      "centroid_local_m": [
+        -0.3722,
+        -46.8778
+      ],
+      "footprint_bounds_local_m": [
+        -5.2322,
+        -52.5728,
+        4.4878,
+        -41.1828
+      ],
+      "base_z_m": 2.78,
+      "lod1_height_m": 5.33,
+      "measuredHeight_attribute_m": 7.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c688f102-1a99-46ee-8cfc-bf9cb97a33a8",
+      "centroid_local_m": [
+        -224.9644,
+        30.8578
+      ],
+      "footprint_bounds_local_m": [
+        -229.9822,
+        26.5872,
+        -219.9422,
+        35.1272
+      ],
+      "base_z_m": 1.355,
+      "lod1_height_m": 9.745,
+      "measuredHeight_attribute_m": 10.2,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_0d135901-a024-426e-b90b-c4f9d209b076",
+      "centroid_local_m": [
+        -195.6172,
+        25.4472
+      ],
+      "footprint_bounds_local_m": [
+        -200.7522,
+        21.3372,
+        -190.4822,
+        29.5572
+      ],
+      "base_z_m": 2.08,
+      "lod1_height_m": 4.95,
+      "measuredHeight_attribute_m": 7.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_02df015f-8fac-4657-a5cb-56514cadb475",
+      "centroid_local_m": [
+        -65.3322,
+        -207.0928
+      ],
+      "footprint_bounds_local_m": [
+        -66.4522,
+        -209.9628,
+        -64.2122,
+        -204.2228
+      ],
+      "base_z_m": 1.974,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c8ecaaeb-a98b-4ec3-9250-6682b4096474",
+      "centroid_local_m": [
+        129.9271,
+        -199.6276
+      ],
+      "footprint_bounds_local_m": [
+        114.0678,
+        -213.2028,
+        145.8078,
+        -185.7528
+      ],
+      "base_z_m": 1.76,
+      "lod1_height_m": 10.06,
+      "measuredHeight_attribute_m": 14.3,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d4c3007a-8445-4402-858b-82442e1f82fd",
+      "centroid_local_m": [
+        -243.2409,
+        -37.5427
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -46.3528,
+        -235.5322,
+        -28.942
+      ],
+      "base_z_m": 0.388,
+      "lod1_height_m": 15.072,
+      "measuredHeight_attribute_m": 24.7,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b9c0c79c-de2c-4578-9913-5de134a08740",
+      "centroid_local_m": [
+        211.5019,
+        -175.8024
+      ],
+      "footprint_bounds_local_m": [
+        204.1278,
+        -181.0928,
+        218.8978,
+        -170.4528
+      ],
+      "base_z_m": 0.443,
+      "lod1_height_m": 15.447,
+      "measuredHeight_attribute_m": 17.8,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9162f2a8-3c24-41a2-933b-d7b1ce358d8e",
+      "centroid_local_m": [
+        -12.0872,
+        -79.0978
+      ],
+      "footprint_bounds_local_m": [
+        -15.2422,
+        -82.1428,
+        -8.9322,
+        -76.0528
+      ],
+      "base_z_m": 3.03,
+      "lod1_height_m": 3.21,
+      "measuredHeight_attribute_m": 3.4,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b54273ea-94da-4666-a297-0b082fcce87f",
+      "centroid_local_m": [
+        -248.1783,
+        -76.8101
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        -85.8728,
+        -244.7822,
+        -70.2152
+      ],
+      "base_z_m": 0.64,
+      "lod1_height_m": 12.98,
+      "measuredHeight_attribute_m": 17.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5c19b570-3ebd-437d-93fd-0d1c32a2b854",
+      "centroid_local_m": [
+        -145.1924,
+        41.5952
+      ],
+      "footprint_bounds_local_m": [
+        -147.0022,
+        38.3072,
+        -143.3822,
+        44.8872
+      ],
+      "base_z_m": 1.616,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c38067a8-64bc-4a8a-a880-9cd445e2a6f8",
+      "centroid_local_m": [
+        223.3307,
+        -150.8698
+      ],
+      "footprint_bounds_local_m": [
+        219.0978,
+        -154.1828,
+        227.1078,
+        -147.4828
+      ],
+      "base_z_m": 0.66,
+      "lod1_height_m": 6.41,
+      "measuredHeight_attribute_m": 6.9,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ef86b633-6c47-4c46-9205-b1a5c926527f",
+      "centroid_local_m": [
+        -210.9501,
+        10.863
+      ],
+      "footprint_bounds_local_m": [
+        -216.1922,
+        3.7172,
+        -205.5822,
+        17.9472
+      ],
+      "base_z_m": 1.371,
+      "lod1_height_m": 9.309,
+      "measuredHeight_attribute_m": 12.5,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_689dd926-be6d-4b05-b0ec-f7f5f0d29dc8",
+      "centroid_local_m": [
+        -214.0554,
+        -214.4235
+      ],
+      "footprint_bounds_local_m": [
+        -224.1222,
+        -220.7428,
+        -205.7222,
+        -209.0428
+      ],
+      "base_z_m": 0.76,
+      "lod1_height_m": 9.64,
+      "measuredHeight_attribute_m": 11.0,
+      "source_file": "data/raw/53394604_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_1367a269-2133-4d97-9b5c-19f4885120d0",
+      "centroid_local_m": [
+        -175.8672,
+        52.2422
+      ],
+      "footprint_bounds_local_m": [
+        -181.2822,
+        30.8872,
+        -170.4522,
+        73.5972
+      ],
+      "base_z_m": 1.81,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_44fdd10d-41a9-4fe4-96f1-be5dee028a09",
+      "centroid_local_m": [
+        205.4728,
+        248.0222
+      ],
+      "footprint_bounds_local_m": [
+        202.4078,
+        247.3372,
+        208.5378,
+        248.7072
+      ],
+      "base_z_m": 0.34,
+      "lod1_height_m": 3.59,
+      "measuredHeight_attribute_m": 3.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_53b51e82-a834-4970-9fc8-aeec7c015281",
+      "centroid_local_m": [
+        -144.0416,
+        248.8984
+      ],
+      "footprint_bounds_local_m": [
+        -148.4722,
+        247.7472,
+        -139.6769,
+        250.0
+      ],
+      "base_z_m": 0.64,
+      "lod1_height_m": 14.25,
+      "measuredHeight_attribute_m": 19.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9ec4a0cd-cb2c-4c35-adca-5a816b3aaa96",
+      "centroid_local_m": [
+        -224.2064,
+        104.9951
+      ],
+      "footprint_bounds_local_m": [
+        -225.2622,
+        101.8072,
+        -223.0922,
+        108.1772
+      ],
+      "base_z_m": 1.291,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_dd657532-7e5b-4f95-a074-01bb5746e12f",
+      "centroid_local_m": [
+        -201.1891,
+        58.6337
+      ],
+      "footprint_bounds_local_m": [
+        -207.1522,
+        50.6172,
+        -195.2122,
+        66.6472
+      ],
+      "base_z_m": 1.15,
+      "lod1_height_m": 9.89,
+      "measuredHeight_attribute_m": 12.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5cbcd6b8-937e-4b7c-ac5b-e5b900b934b8",
+      "centroid_local_m": [
+        -150.7196,
+        114.6507
+      ],
+      "footprint_bounds_local_m": [
+        -152.1622,
+        112.0872,
+        -149.2722,
+        117.2172
+      ],
+      "base_z_m": 2.141,
+      "lod1_height_m": 3.419,
+      "measuredHeight_attribute_m": 31.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9b5c8331-9fda-46e2-907a-d8427499c13e",
+      "centroid_local_m": [
+        219.3278,
+        238.2622
+      ],
+      "footprint_bounds_local_m": [
+        213.4078,
+        232.8272,
+        225.2478,
+        243.6972
+      ],
+      "base_z_m": 0.644,
+      "lod1_height_m": 13.156,
+      "measuredHeight_attribute_m": 13.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f3d85bbe-7da8-4410-805a-6eafad000fb2",
+      "centroid_local_m": [
+        -159.2709,
+        117.5455
+      ],
+      "footprint_bounds_local_m": [
+        -164.9122,
+        110.6972,
+        -154.0722,
+        124.3872
+      ],
+      "base_z_m": 1.95,
+      "lod1_height_m": 5.29,
+      "measuredHeight_attribute_m": 8.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3d270fa3-f4d6-4dc0-bc8c-5a8f376e9827",
+      "centroid_local_m": [
+        -21.5255,
+        244.2197
+      ],
+      "footprint_bounds_local_m": [
+        -36.278,
+        238.1272,
+        -6.5122,
+        250.0
+      ],
+      "base_z_m": 1.514,
+      "lod1_height_m": 4.226,
+      "measuredHeight_attribute_m": 7.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_8e2c3928-7604-478a-a297-5d2398e1aaf8",
+      "centroid_local_m": [
+        -110.7596,
+        111.5793
+      ],
+      "footprint_bounds_local_m": [
+        -115.2022,
+        106.5672,
+        -105.0022,
+        116.2972
+      ],
+      "base_z_m": 1.507,
+      "lod1_height_m": 9.293,
+      "measuredHeight_attribute_m": 12.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ba622010-02f2-438a-8803-622b0770b8ed",
+      "centroid_local_m": [
+        -235.5509,
+        220.8328
+      ],
+      "footprint_bounds_local_m": [
+        -239.6522,
+        215.8272,
+        -233.7022,
+        228.7672
+      ],
+      "base_z_m": 1.172,
+      "lod1_height_m": 4.598,
+      "measuredHeight_attribute_m": 6.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_36700cd8-bf22-4187-a781-216930e0f231",
+      "centroid_local_m": [
+        219.1472,
+        211.2927
+      ],
+      "footprint_bounds_local_m": [
+        216.0578,
+        206.4972,
+        222.1778,
+        216.1272
+      ],
+      "base_z_m": 1.3,
+      "lod1_height_m": 12.88,
+      "measuredHeight_attribute_m": 13.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_abff676d-7875-447f-8505-2418cb1baa26",
+      "centroid_local_m": [
+        199.714,
+        223.5197
+      ],
+      "footprint_bounds_local_m": [
+        197.5278,
+        221.9972,
+        201.8978,
+        225.0472
+      ],
+      "base_z_m": 0.757,
+      "lod1_height_m": 4.023,
+      "measuredHeight_attribute_m": 4.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d0300617-e001-4ae5-9449-619793420ce3",
+      "centroid_local_m": [
+        -159.9522,
+        51.3822
+      ],
+      "footprint_bounds_local_m": [
+        -175.0722,
+        29.6772,
+        -144.8322,
+        73.0872
+      ],
+      "base_z_m": 1.88,
+      "lod1_height_m": 28.073,
+      "measuredHeight_attribute_m": 36.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ac7899a1-3cd1-41cd-9b96-2b0b942e73a6",
+      "centroid_local_m": [
+        -145.8446,
+        127.747
+      ],
+      "footprint_bounds_local_m": [
+        -150.7722,
+        126.2172,
+        -140.9122,
+        129.2772
+      ],
+      "base_z_m": 1.98,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_29bb6420-6049-4edf-ae61-7a094f3a0080",
+      "centroid_local_m": [
+        217.3545,
+        228.5414
+      ],
+      "footprint_bounds_local_m": [
+        214.9378,
+        225.0472,
+        219.6878,
+        231.9972
+      ],
+      "base_z_m": 0.999,
+      "lod1_height_m": 6.431,
+      "measuredHeight_attribute_m": 7.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c0b7a321-cf38-49b3-89a7-bae93d296618",
+      "centroid_local_m": [
+        -109.8559,
+        228.8209
+      ],
+      "footprint_bounds_local_m": [
+        -125.6822,
+        221.8472,
+        -95.4122,
+        235.5972
+      ],
+      "base_z_m": 1.01,
+      "lod1_height_m": 33.88,
+      "measuredHeight_attribute_m": 43.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cf8a8bf7-b5e1-42b5-a596-8e90358fd69c",
+      "centroid_local_m": [
+        -131.697,
+        52.2035
+      ],
+      "footprint_bounds_local_m": [
+        -139.0922,
+        44.0672,
+        -124.7222,
+        60.9372
+      ],
+      "base_z_m": 0.88,
+      "lod1_height_m": 32.83,
+      "measuredHeight_attribute_m": 33.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_0722ef57-bd27-435d-ac63-dc2e9e384e32",
+      "centroid_local_m": [
+        -228.0325,
+        104.8557
+      ],
+      "footprint_bounds_local_m": [
+        -229.0122,
+        101.5672,
+        -227.0422,
+        108.1772
+      ],
+      "base_z_m": 1.132,
+      "lod1_height_m": 3.108,
+      "measuredHeight_attribute_m": 3.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d915c30b-1456-48b1-b2a1-5d047ea04012",
+      "centroid_local_m": [
+        -144.5288,
+        204.5644
+      ],
+      "footprint_bounds_local_m": [
+        -151.2222,
+        198.1772,
+        -137.3622,
+        211.1472
+      ],
+      "base_z_m": 0.71,
+      "lod1_height_m": 9.49,
+      "measuredHeight_attribute_m": 9.6,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b62b38ed-15f3-4656-874d-3cfc027a8424",
+      "centroid_local_m": [
+        -50.4402,
+        234.3449
+      ],
+      "footprint_bounds_local_m": [
+        -53.6122,
+        232.8272,
+        -47.2722,
+        235.8672
+      ],
+      "base_z_m": 1.895,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2e3d3517-ea0a-4033-a1ee-0fa766c48e89",
+      "centroid_local_m": [
+        -239.7451,
+        116.3013
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        103.2672,
+        -230.1122,
+        128.8572
+      ],
+      "base_z_m": 0.99,
+      "lod1_height_m": 25.97,
+      "measuredHeight_attribute_m": 42.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_9c289173-5fca-4f33-991f-d85bfe793e1f",
+      "centroid_local_m": [
+        217.9828,
+        220.4622
+      ],
+      "footprint_bounds_local_m": [
+        215.2478,
+        216.0572,
+        220.7178,
+        224.8672
+      ],
+      "base_z_m": 1.15,
+      "lod1_height_m": 6.29,
+      "measuredHeight_attribute_m": 9.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_83e99d0a-e2e1-461e-915c-49db0c8cd000",
+      "centroid_local_m": [
+        200.489,
+        191.4649
+      ],
+      "footprint_bounds_local_m": [
+        196.0978,
+        189.5772,
+        204.8678,
+        193.3672
+      ],
+      "base_z_m": 1.43,
+      "lod1_height_m": 9.19,
+      "measuredHeight_attribute_m": 11.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f2a34d53-4ddc-4a35-95df-386d8f8f256b",
+      "centroid_local_m": [
+        -56.1572,
+        232.2822
+      ],
+      "footprint_bounds_local_m": [
+        -57.8122,
+        229.4472,
+        -54.5022,
+        235.1172
+      ],
+      "base_z_m": 2.06,
+      "lod1_height_m": 4.7,
+      "measuredHeight_attribute_m": 8.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5d1efc91-6b06-45bb-895a-c751c7194903",
+      "centroid_local_m": [
+        -226.4498,
+        172.3726
+      ],
+      "footprint_bounds_local_m": [
+        -231.6622,
+        169.6572,
+        -221.2422,
+        175.0872
+      ],
+      "base_z_m": 0.526,
+      "lod1_height_m": 8.904,
+      "measuredHeight_attribute_m": 9.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cd7d4d88-8a6c-4b63-88c0-b5717c601cf5",
+      "centroid_local_m": [
+        224.5705,
+        220.5216
+      ],
+      "footprint_bounds_local_m": [
+        220.4078,
+        217.1772,
+        228.7378,
+        223.8672
+      ],
+      "base_z_m": 1.015,
+      "lod1_height_m": 9.165,
+      "measuredHeight_attribute_m": 10.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3570dedb-4a69-46bf-a684-84967fb7ed09",
+      "centroid_local_m": [
+        -143.3657,
+        243.0271
+      ],
+      "footprint_bounds_local_m": [
+        -148.4922,
+        239.2172,
+        -138.2622,
+        246.3072
+      ],
+      "base_z_m": 0.72,
+      "lod1_height_m": 9.57,
+      "measuredHeight_attribute_m": 10.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_45a9d6d8-479c-4682-915f-24bbe402e4ff",
+      "centroid_local_m": [
+        -197.8784,
+        130.1281
+      ],
+      "footprint_bounds_local_m": [
+        -207.0922,
+        128.1072,
+        -188.8322,
+        132.2372
+      ],
+      "base_z_m": 2.16,
+      "lod1_height_m": 7.36,
+      "measuredHeight_attribute_m": 38.6,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_76738a42-31ed-44de-a995-affdf927d824",
+      "centroid_local_m": [
+        -183.9682,
+        174.4288
+      ],
+      "footprint_bounds_local_m": [
+        -194.6422,
+        171.5772,
+        -173.7122,
+        177.2872
+      ],
+      "base_z_m": 0.37,
+      "lod1_height_m": 11.93,
+      "measuredHeight_attribute_m": 13.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c3f5141c-70e3-4f4f-ac73-e70751152215",
+      "centroid_local_m": [
+        -204.0931,
+        113.0097
+      ],
+      "footprint_bounds_local_m": [
+        -206.9922,
+        110.3472,
+        -201.1922,
+        115.6772
+      ],
+      "base_z_m": 2.09,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_17412286-1d5b-44af-b208-0319eb8d9b05",
+      "centroid_local_m": [
+        -119.1243,
+        78.0279
+      ],
+      "footprint_bounds_local_m": [
+        -123.9822,
+        71.6572,
+        -114.3022,
+        83.5072
+      ],
+      "base_z_m": 1.421,
+      "lod1_height_m": 23.429,
+      "measuredHeight_attribute_m": 24.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b238a6c1-552e-41a2-8b94-1f56e186615d",
+      "centroid_local_m": [
+        -55.8123,
+        242.5093
+      ],
+      "footprint_bounds_local_m": [
+        -57.2022,
+        236.6472,
+        -54.3022,
+        250.0
+      ],
+      "base_z_m": 2.09,
+      "lod1_height_m": 7.46,
+      "measuredHeight_attribute_m": 10.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_1ddbeb0f-78f1-4268-a93b-ed0c2b90360d",
+      "centroid_local_m": [
+        -101.3022,
+        198.3622
+      ],
+      "footprint_bounds_local_m": [
+        -102.8922,
+        193.7772,
+        -99.7122,
+        202.9472
+      ],
+      "base_z_m": 1.618,
+      "lod1_height_m": 3.652,
+      "measuredHeight_attribute_m": 4.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_7d6eb0fb-993b-45c1-bc85-de9313fd29dc",
+      "centroid_local_m": [
+        -116.7062,
+        249.9791
+      ],
+      "footprint_bounds_local_m": [
+        -117.0165,
+        249.9372,
+        -116.0899,
+        250.0
+      ],
+      "base_z_m": 0.97,
+      "lod1_height_m": 31.31,
+      "measuredHeight_attribute_m": 33.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d52d04de-0182-43b0-9e7a-57302a99f5da",
+      "centroid_local_m": [
+        -218.9226,
+        118.008
+      ],
+      "footprint_bounds_local_m": [
+        -228.8122,
+        109.3772,
+        -209.3722,
+        130.0472
+      ],
+      "base_z_m": 1.56,
+      "lod1_height_m": 38.46,
+      "measuredHeight_attribute_m": 40.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d2882bf9-3b52-49c1-8b01-738eecc468ff",
+      "centroid_local_m": [
+        -52.5595,
+        226.1752
+      ],
+      "footprint_bounds_local_m": [
+        -56.8022,
+        224.1072,
+        -47.1722,
+        229.3872
+      ],
+      "base_z_m": 1.84,
+      "lod1_height_m": 10.54,
+      "measuredHeight_attribute_m": 17.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cf09edaa-96a7-42ca-97d2-a19bd5af8499",
+      "centroid_local_m": [
+        226.5315,
+        211.9406
+      ],
+      "footprint_bounds_local_m": [
+        222.5078,
+        207.0072,
+        230.5478,
+        217.1272
+      ],
+      "base_z_m": 1.185,
+      "lod1_height_m": 11.135,
+      "measuredHeight_attribute_m": 13.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_92260380-eac8-4d2a-a1bc-f5bc2da3128c",
+      "centroid_local_m": [
+        208.5089,
+        229.5948
+      ],
+      "footprint_bounds_local_m": [
+        204.2978,
+        226.2772,
+        212.7178,
+        232.9172
+      ],
+      "base_z_m": 0.53,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4dadc64c-3b41-4298-861f-6463507c559a",
+      "centroid_local_m": [
+        -116.3722,
+        177.1672
+      ],
+      "footprint_bounds_local_m": [
+        -121.4622,
+        174.0972,
+        -111.2822,
+        180.2372
+      ],
+      "base_z_m": 1.017,
+      "lod1_height_m": 5.993,
+      "measuredHeight_attribute_m": 6.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_fc449a4d-a61c-4364-b2bc-72fe8cf5cc18",
+      "centroid_local_m": [
+        -205.4216,
+        107.6435
+      ],
+      "footprint_bounds_local_m": [
+        -206.8922,
+        105.6672,
+        -203.9422,
+        109.6172
+      ],
+      "base_z_m": 2.063,
+      "lod1_height_m": 3.097,
+      "measuredHeight_attribute_m": 7.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_07e0d60b-826e-4691-b751-c1a62eef009a",
+      "centroid_local_m": [
+        -239.6083,
+        204.1338
+      ],
+      "footprint_bounds_local_m": [
+        -248.2222,
+        188.9672,
+        -233.7722,
+        215.7872
+      ],
+      "base_z_m": 1.059,
+      "lod1_height_m": 5.551,
+      "measuredHeight_attribute_m": 6.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e25cd28a-21a0-4cb4-b93b-a8135ee2485d",
+      "centroid_local_m": [
+        -213.5846,
+        232.0469
+      ],
+      "footprint_bounds_local_m": [
+        -222.8022,
+        228.7372,
+        -204.3622,
+        235.3572
+      ],
+      "base_z_m": 1.166,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2374f51f-5a88-49e4-8f6f-fedba4ebc363",
+      "centroid_local_m": [
+        -230.5597,
+        194.9859
+      ],
+      "footprint_bounds_local_m": [
+        -232.9622,
+        191.3672,
+        -228.1622,
+        198.6072
+      ],
+      "base_z_m": 0.548,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_3fa05d09-0d1d-4582-ae28-c5dba26591b6",
+      "centroid_local_m": [
+        242.3366,
+        225.4618
+      ],
+      "footprint_bounds_local_m": [
+        237.3978,
+        219.9372,
+        247.0478,
+        230.6672
+      ],
+      "base_z_m": 0.897,
+      "lod1_height_m": 11.843,
+      "measuredHeight_attribute_m": 14.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f12965c8-a1ea-4c48-86af-ffe684d7e982",
+      "centroid_local_m": [
+        240.2244,
+        244.372
+      ],
+      "footprint_bounds_local_m": [
+        235.4278,
+        240.8472,
+        245.0678,
+        247.8072
+      ],
+      "base_z_m": 0.45,
+      "lod1_height_m": 13.08,
+      "measuredHeight_attribute_m": 13.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2ce44506-36f2-46d3-8a5d-c2486abad708",
+      "centroid_local_m": [
+        223.9716,
+        229.9895
+      ],
+      "footprint_bounds_local_m": [
+        219.9478,
+        226.9472,
+        227.9978,
+        233.0272
+      ],
+      "base_z_m": 0.81,
+      "lod1_height_m": 9.54,
+      "measuredHeight_attribute_m": 10.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b20db0d6-3cf5-4024-850d-dc43dbe6f8a8",
+      "centroid_local_m": [
+        -183.6208,
+        226.3776
+      ],
+      "footprint_bounds_local_m": [
+        -194.0924,
+        203.7272,
+        -174.7922,
+        250.0
+      ],
+      "base_z_m": 0.78,
+      "lod1_height_m": 32.27,
+      "measuredHeight_attribute_m": 38.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_afe83ecd-94db-455b-aab9-c970a6cc7045",
+      "centroid_local_m": [
+        -116.2764,
+        206.4085
+      ],
+      "footprint_bounds_local_m": [
+        -122.0222,
+        194.0972,
+        -110.2922,
+        220.3372
+      ],
+      "base_z_m": 1.01,
+      "lod1_height_m": 23.53,
+      "measuredHeight_attribute_m": 34.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_658e6d03-c2cf-42ce-9cc5-83a900f32ae8",
+      "centroid_local_m": [
+        -245.2822,
+        228.0272
+      ],
+      "footprint_bounds_local_m": [
+        -248.4222,
+        224.4172,
+        -242.1422,
+        231.6372
+      ],
+      "base_z_m": 1.265,
+      "lod1_height_m": 4.965,
+      "measuredHeight_attribute_m": 5.0,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c47fb9b9-79e4-4cc8-a3b3-b1b307206943",
+      "centroid_local_m": [
+        -110.4269,
+        75.6117
+      ],
+      "footprint_bounds_local_m": [
+        -114.2322,
+        70.6972,
+        -105.8922,
+        83.4772
+      ],
+      "base_z_m": 1.324,
+      "lod1_height_m": 14.756,
+      "measuredHeight_attribute_m": 16.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_a2b79a92-4615-4020-a925-57d1514057b0",
+      "centroid_local_m": [
+        -197.5912,
+        68.2414
+      ],
+      "footprint_bounds_local_m": [
+        -199.5922,
+        66.3872,
+        -195.5622,
+        70.0672
+      ],
+      "base_z_m": 1.349,
+      "lod1_height_m": 5.011,
+      "measuredHeight_attribute_m": 8.6,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e4409457-3947-4212-a684-e21b57aad2b1",
+      "centroid_local_m": [
+        -239.2877,
+        171.6985
+      ],
+      "footprint_bounds_local_m": [
+        -246.3922,
+        168.9972,
+        -232.2922,
+        174.5072
+      ],
+      "base_z_m": 0.661,
+      "lod1_height_m": 12.879,
+      "measuredHeight_attribute_m": 15.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4c30eb22-2385-4b6e-ade3-0afae4d012a2",
+      "centroid_local_m": [
+        -225.7111,
+        127.3748
+      ],
+      "footprint_bounds_local_m": [
+        -228.5722,
+        125.2272,
+        -222.8522,
+        129.5272
+      ],
+      "base_z_m": 1.732,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_6301536e-644f-4c53-945b-ff3807b3d358",
+      "centroid_local_m": [
+        219.9452,
+        246.7225
+      ],
+      "footprint_bounds_local_m": [
+        213.7078,
+        244.3372,
+        226.1778,
+        249.1072
+      ],
+      "base_z_m": 0.39,
+      "lod1_height_m": 9.04,
+      "measuredHeight_attribute_m": 11.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d50cb4a0-8ded-4ba0-9a00-0dd23f27aead",
+      "centroid_local_m": [
+        -156.3627,
+        131.2893
+      ],
+      "footprint_bounds_local_m": [
+        -161.5222,
+        127.4772,
+        -151.3322,
+        135.0072
+      ],
+      "base_z_m": 1.99,
+      "lod1_height_m": 6.45,
+      "measuredHeight_attribute_m": 7.6,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_67ec3dfb-c68c-41d8-b037-d0bc54910e58",
+      "centroid_local_m": [
+        -232.0822,
+        207.5372
+      ],
+      "footprint_bounds_local_m": [
+        -233.1822,
+        206.5372,
+        -230.9822,
+        208.5372
+      ],
+      "base_z_m": 0.882,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b0c0a5ca-d7bd-4444-91b3-82ccdc223dc0",
+      "centroid_local_m": [
+        211.6078,
+        224.0172
+      ],
+      "footprint_bounds_local_m": [
+        209.0378,
+        222.3072,
+        214.1778,
+        225.7272
+      ],
+      "base_z_m": 0.888,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b1fcb972-a7cc-4df3-807d-866335ccfe6e",
+      "centroid_local_m": [
+        241.0528,
+        235.3972
+      ],
+      "footprint_bounds_local_m": [
+        236.2378,
+        231.2472,
+        245.8678,
+        239.5472
+      ],
+      "base_z_m": 0.615,
+      "lod1_height_m": 12.435,
+      "measuredHeight_attribute_m": 17.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_39a7858f-16f4-4269-99d2-ebac816be001",
+      "centroid_local_m": [
+        -210.178,
+        244.6189
+      ],
+      "footprint_bounds_local_m": [
+        -233.9622,
+        242.0472,
+        -193.1522,
+        247.2172
+      ],
+      "base_z_m": 1.017,
+      "lod1_height_m": 4.323,
+      "measuredHeight_attribute_m": 14.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5d0a8cfe-f4d4-45e2-887a-2f1dd3fa9929",
+      "centroid_local_m": [
+        -233.0926,
+        64.7229
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        57.438,
+        -215.1522,
+        76.2672
+      ],
+      "base_z_m": 0.75,
+      "lod1_height_m": 31.49,
+      "measuredHeight_attribute_m": 38.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_de088a27-72e4-48aa-9418-9a231b8f96e1",
+      "centroid_local_m": [
+        -103.0046,
+        206.8513
+      ],
+      "footprint_bounds_local_m": [
+        -105.7022,
+        204.0572,
+        -100.3022,
+        209.6472
+      ],
+      "base_z_m": 1.599,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_85181e6b-a7eb-49c4-934f-4e08c3af53da",
+      "centroid_local_m": [
+        -36.7998,
+        245.4599
+      ],
+      "footprint_bounds_local_m": [
+        -37.4622,
+        243.4472,
+        -36.1422,
+        247.4672
+      ],
+      "base_z_m": 1.538,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_91b41276-3343-48d5-8731-6ea1ab765817",
+      "centroid_local_m": [
+        225.8936,
+        239.0045
+      ],
+      "footprint_bounds_local_m": [
+        224.5778,
+        234.6372,
+        227.2178,
+        243.3872
+      ],
+      "base_z_m": 0.638,
+      "lod1_height_m": 4.032,
+      "measuredHeight_attribute_m": 4.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_638e531d-d55c-4b6a-ad14-337486fa7379",
+      "centroid_local_m": [
+        190.8176,
+        236.7524
+      ],
+      "footprint_bounds_local_m": [
+        182.2078,
+        226.3272,
+        202.1378,
+        246.8072
+      ],
+      "base_z_m": 0.353,
+      "lod1_height_m": 35.557,
+      "measuredHeight_attribute_m": 37.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ef533165-1d73-4c77-b7b4-f94c9dcf2d4d",
+      "centroid_local_m": [
+        -129.398,
+        176.6056
+      ],
+      "footprint_bounds_local_m": [
+        -136.4722,
+        173.4372,
+        -122.0122,
+        179.6572
+      ],
+      "base_z_m": 0.78,
+      "lod1_height_m": 8.8,
+      "measuredHeight_attribute_m": 9.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_eb4af26d-b381-4857-a272-7a9e8a33ed2f",
+      "centroid_local_m": [
+        -249.447,
+        202.6721
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        194.6146,
+        -248.6422,
+        212.2072
+      ],
+      "base_z_m": 1.17,
+      "lod1_height_m": 41.64,
+      "measuredHeight_attribute_m": 45.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b58706d1-72b0-4f75-9696-bf08e996844f",
+      "centroid_local_m": [
+        -245.0776,
+        202.9966
+      ],
+      "footprint_bounds_local_m": [
+        -248.0522,
+        200.5672,
+        -242.1022,
+        205.4372
+      ],
+      "base_z_m": 1.17,
+      "lod1_height_m": 3.54,
+      "measuredHeight_attribute_m": 5.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_60f9f447-8fe2-4e08-92eb-8224529fc1be",
+      "centroid_local_m": [
+        -201.286,
+        234.477
+      ],
+      "footprint_bounds_local_m": [
+        -203.4022,
+        232.5872,
+        -199.2022,
+        236.2972
+      ],
+      "base_z_m": 1.198,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_f64b1582-a2c6-41b0-856c-68ab09618e36",
+      "centroid_local_m": [
+        -142.0292,
+        108.4698
+      ],
+      "footprint_bounds_local_m": [
+        -147.9822,
+        105.3172,
+        -137.0622,
+        111.3472
+      ],
+      "base_z_m": 1.753,
+      "lod1_height_m": 3.197,
+      "measuredHeight_attribute_m": 16.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ad3ab4c1-f3fd-4d1d-bbd5-66bf78273449",
+      "centroid_local_m": [
+        -128.7464,
+        233.8547
+      ],
+      "footprint_bounds_local_m": [
+        -130.5822,
+        232.0472,
+        -126.9122,
+        235.6672
+      ],
+      "base_z_m": 0.814,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ac347350-eab2-4c6e-bc89-fafa5816b2c1",
+      "centroid_local_m": [
+        -144.6175,
+        217.2622
+      ],
+      "footprint_bounds_local_m": [
+        -151.4022,
+        212.6072,
+        -138.5122,
+        222.2572
+      ],
+      "base_z_m": 0.84,
+      "lod1_height_m": 12.82,
+      "measuredHeight_attribute_m": 16.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cecc12a9-bbdf-421c-8b00-b2db573479d1",
+      "centroid_local_m": [
+        200.7428,
+        234.2872
+      ],
+      "footprint_bounds_local_m": [
+        199.4878,
+        232.6572,
+        201.9978,
+        235.9172
+      ],
+      "base_z_m": 0.53,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e2c3c87b-1a4d-404e-b777-e70c7b3a83e3",
+      "centroid_local_m": [
+        21.9852,
+        239.2853
+      ],
+      "footprint_bounds_local_m": [
+        16.2278,
+        233.7972,
+        27.5878,
+        244.3072
+      ],
+      "base_z_m": 1.648,
+      "lod1_height_m": 3.222,
+      "measuredHeight_attribute_m": 5.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_fe44ff66-cc4a-41e7-8459-b93c0c1cee59",
+      "centroid_local_m": [
+        -105.0036,
+        243.308
+      ],
+      "footprint_bounds_local_m": [
+        -114.1722,
+        236.7772,
+        -96.7422,
+        249.8972
+      ],
+      "base_z_m": 0.99,
+      "lod1_height_m": 33.439,
+      "measuredHeight_attribute_m": 42.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_cdb02e98-1c4e-4923-93dc-1f3890c79cf5",
+      "centroid_local_m": [
+        -183.0237,
+        199.97
+      ],
+      "footprint_bounds_local_m": [
+        -189.1622,
+        195.0672,
+        -174.7922,
+        204.1172
+      ],
+      "base_z_m": 0.755,
+      "lod1_height_m": 6.385,
+      "measuredHeight_attribute_m": 10.6,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_29454834-10c0-4855-97d3-c7b558d845b7",
+      "centroid_local_m": [
+        -195.1971,
+        123.1494
+      ],
+      "footprint_bounds_local_m": [
+        -207.0922,
+        116.7672,
+        -182.7022,
+        132.2972
+      ],
+      "base_z_m": 1.862,
+      "lod1_height_m": 33.378,
+      "measuredHeight_attribute_m": 46.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_19d22278-8fa2-4ff0-870b-836cabc2e5dc",
+      "centroid_local_m": [
+        239.2251,
+        192.6898
+      ],
+      "footprint_bounds_local_m": [
+        231.6478,
+        189.6872,
+        246.7978,
+        195.6972
+      ],
+      "base_z_m": 1.615,
+      "lod1_height_m": 15.875,
+      "measuredHeight_attribute_m": 18.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e4d03f9d-23ef-4671-9f12-f0975af0cbb8",
+      "centroid_local_m": [
+        210.9791,
+        243.732
+      ],
+      "footprint_bounds_local_m": [
+        208.8378,
+        237.7972,
+        212.6278,
+        248.5872
+      ],
+      "base_z_m": 0.415,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5178f819-d289-456b-83c3-c1a24c1c10ee",
+      "centroid_local_m": [
+        -173.0923,
+        54.4654
+      ],
+      "footprint_bounds_local_m": [
+        -174.3122,
+        51.7872,
+        -171.8722,
+        57.1472
+      ],
+      "base_z_m": 1.961,
+      "lod1_height_m": 14.269,
+      "measuredHeight_attribute_m": 27.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_41a40399-7766-43ca-87a5-9a432aeaa559",
+      "centroid_local_m": [
+        -238.0291,
+        229.8521
+      ],
+      "footprint_bounds_local_m": [
+        -241.4222,
+        226.9372,
+        -234.0622,
+        232.4172
+      ],
+      "base_z_m": 1.274,
+      "lod1_height_m": 3.676,
+      "measuredHeight_attribute_m": 4.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_d4f8966e-9ddd-4541-b310-374d2cd475e4",
+      "centroid_local_m": [
+        243.6478,
+        215.9022
+      ],
+      "footprint_bounds_local_m": [
+        238.9878,
+        213.2372,
+        248.3078,
+        218.5672
+      ],
+      "base_z_m": 1.369,
+      "lod1_height_m": 8.151,
+      "measuredHeight_attribute_m": 9.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_15363e93-7804-4be3-960c-561afc73990c",
+      "centroid_local_m": [
+        147.9483,
+        246.2015
+      ],
+      "footprint_bounds_local_m": [
+        142.3578,
+        241.3872,
+        153.425,
+        250.0
+      ],
+      "base_z_m": 1.11,
+      "lod1_height_m": 4.83,
+      "measuredHeight_attribute_m": 8.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ef55f680-2c1a-478c-a252-d51cd77c294b",
+      "centroid_local_m": [
+        -146.1396,
+        132.682
+      ],
+      "footprint_bounds_local_m": [
+        -150.6822,
+        131.2272,
+        -141.5922,
+        134.1372
+      ],
+      "base_z_m": 1.99,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c48eccd5-fac2-4e16-964c-33e0954f5c28",
+      "centroid_local_m": [
+        -249.6407,
+        228.2015
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        224.9674,
+        -249.2422,
+        231.5572
+      ],
+      "base_z_m": 1.18,
+      "lod1_height_m": 5.75,
+      "measuredHeight_attribute_m": 7.5,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5b1ea7ed-d1f6-4d10-a029-d35f6d99f3fe",
+      "centroid_local_m": [
+        -144.7447,
+        226.1876
+      ],
+      "footprint_bounds_local_m": [
+        -151.4722,
+        223.2272,
+        -138.0122,
+        229.1472
+      ],
+      "base_z_m": 0.805,
+      "lod1_height_m": 7.525,
+      "measuredHeight_attribute_m": 9.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_4b49c7b3-cedc-4107-89dd-8e0753dfcfbe",
+      "centroid_local_m": [
+        189.9264,
+        222.4504
+      ],
+      "footprint_bounds_local_m": [
+        187.9178,
+        220.2772,
+        191.9378,
+        224.5972
+      ],
+      "base_z_m": 0.873,
+      "lod1_height_m": 13.647,
+      "measuredHeight_attribute_m": 18.3,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_6fec2b5e-6b33-4a18-b0eb-0b71e41aba9f",
+      "centroid_local_m": [
+        -203.1166,
+        226.1847
+      ],
+      "footprint_bounds_local_m": [
+        -205.3722,
+        223.2072,
+        -200.8622,
+        229.1672
+      ],
+      "base_z_m": 1.28,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_0d13eb2c-e4b5-44a5-836b-9d4539b7c9b7",
+      "centroid_local_m": [
+        217.2668,
+        191.5641
+      ],
+      "footprint_bounds_local_m": [
+        207.0778,
+        189.4672,
+        227.5478,
+        193.6072
+      ],
+      "base_z_m": 1.33,
+      "lod1_height_m": 9.6,
+      "measuredHeight_attribute_m": 12.7,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_dbd52610-fb4a-4104-9a79-0d0f10b1aed9",
+      "centroid_local_m": [
+        -177.4351,
+        120.6462
+      ],
+      "footprint_bounds_local_m": [
+        -181.5022,
+        115.9172,
+        -173.3722,
+        125.3772
+      ],
+      "base_z_m": 1.016,
+      "lod1_height_m": 4.124,
+      "measuredHeight_attribute_m": 7.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_dc9d2e05-8c89-4e17-af2b-83224b409bbd",
+      "centroid_local_m": [
+        -233.4124,
+        244.9147
+      ],
+      "footprint_bounds_local_m": [
+        -250.0,
+        235.9368,
+        -205.3222,
+        250.0
+      ],
+      "base_z_m": 0.923,
+      "lod1_height_m": 10.477,
+      "measuredHeight_attribute_m": 17.1,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_2938eaea-7259-4927-8c6c-ce38942cd4f3",
+      "centroid_local_m": [
+        212.5325,
+        235.7996
+      ],
+      "footprint_bounds_local_m": [
+        211.8178,
+        234.1972,
+        213.2478,
+        237.3972
+      ],
+      "base_z_m": 0.658,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_a2f4ed5a-a444-4b2a-bc99-3cbeffb40a27",
+      "centroid_local_m": [
+        199.7931,
+        214.6453
+      ],
+      "footprint_bounds_local_m": [
+        184.8578,
+        207.1772,
+        214.0278,
+        224.9672
+      ],
+      "base_z_m": 0.811,
+      "lod1_height_m": 18.219,
+      "measuredHeight_attribute_m": 25.4,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_e65c4387-01fa-4646-a354-6ec7ff571f81",
+      "centroid_local_m": [
+        -245.0547,
+        220.1461
+      ],
+      "footprint_bounds_local_m": [
+        -248.1122,
+        216.1872,
+        -242.0022,
+        224.1072
+      ],
+      "base_z_m": 1.2,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5e7697a2-a546-4f95-b514-60784786d4d7",
+      "centroid_local_m": [
+        240.8675,
+        249.1402
+      ],
+      "footprint_bounds_local_m": [
+        237.7975,
+        247.9872,
+        244.3178,
+        250.0
+      ],
+      "base_z_m": 0.53,
+      "lod1_height_m": 5.32,
+      "measuredHeight_attribute_m": 6.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_26c18afb-e8a0-4fe6-b7e3-611fcc9a0b9b",
+      "centroid_local_m": [
+        -231.1279,
+        202.779
+      ],
+      "footprint_bounds_local_m": [
+        -233.0122,
+        199.5672,
+        -229.0022,
+        205.5572
+      ],
+      "base_z_m": 0.678,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_c8dc3389-fa69-49ab-9765-3a6035a7701d",
+      "centroid_local_m": [
+        -174.5527,
+        131.6651
+      ],
+      "footprint_bounds_local_m": [
+        -176.6122,
+        129.0772,
+        -172.4922,
+        134.2572
+      ],
+      "base_z_m": 2.524,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_22c4aba3-86e4-4689-8882-3a8cb4944aae",
+      "centroid_local_m": [
+        185.5678,
+        222.6372
+      ],
+      "footprint_bounds_local_m": [
+        183.7678,
+        221.1072,
+        187.3678,
+        224.1672
+      ],
+      "base_z_m": 0.968,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_ceb0ee2b-e874-46fc-9bc9-21f8f5b5cb10",
+      "centroid_local_m": [
+        -187.3246,
+        192.0455
+      ],
+      "footprint_bounds_local_m": [
+        -188.9222,
+        188.9472,
+        -185.7222,
+        195.1472
+      ],
+      "base_z_m": 0.489,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_19da9416-6093-4787-9923-802b60bb88d5",
+      "centroid_local_m": [
+        -144.2099,
+        117.2227
+      ],
+      "footprint_bounds_local_m": [
+        -151.1422,
+        110.9972,
+        -137.7522,
+        125.1272
+      ],
+      "base_z_m": 1.96,
+      "lod1_height_m": 30.76,
+      "measuredHeight_attribute_m": 37.9,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_b24d5806-4f31-40de-9f15-800aa98491a2",
+      "centroid_local_m": [
+        -126.5142,
+        116.149
+      ],
+      "footprint_bounds_local_m": [
+        -136.3422,
+        107.2572,
+        -116.4022,
+        128.2872
+      ],
+      "base_z_m": 1.518,
+      "lod1_height_m": 38.642,
+      "measuredHeight_attribute_m": 47.2,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_8edc7121-9f60-4175-8caa-cf320dae664c",
+      "centroid_local_m": [
+        -125.5066,
+        249.7424
+      ],
+      "footprint_bounds_local_m": [
+        -128.4513,
+        249.2272,
+        -119.6864,
+        250.0
+      ],
+      "base_z_m": 0.75,
+      "lod1_height_m": 16.32,
+      "measuredHeight_attribute_m": 21.8,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    },
+    {
+      "citygml_id": "bldg_5e1f45ea-d96a-41e4-b170-9f87fe88e42b",
+      "centroid_local_m": [
+        -231.0872,
+        189.4072
+      ],
+      "footprint_bounds_local_m": [
+        -233.3222,
+        188.2272,
+        -228.8522,
+        190.5872
+      ],
+      "base_z_m": 0.566,
+      "lod1_height_m": 3.0,
+      "measuredHeight_attribute_m": null,
+      "source_file": "data/raw/53394614_bldg_6697_op.gml"
+    }
+  ],
+  "height_method": "LOD1 Solid Z max-min; base elevation retained separately; measuredHeight preserved as source metadata",
+  "measured_height_differs_from_lod1_solid_count": 151,
+  "other_features": {
+    "roads": 0,
+    "vegetation": 0,
+    "bridges": 0,
+    "terrain": 0
+  },
+  "data_gaps": [
+    "Roads, vegetation, bridges and terrain are not converted in Phase 1.",
+    "Dataset release year is from the supplied official dataset identifier; license is not present in the provided per-mesh archives and remains unverified."
+  ],
+  "warnings": [],
+  "validation": {
+    "mesh_codes_computed": true,
+    "all_footprints_inside_500m_extent": true,
+    "all_buildings_have_positive_finite_height": true,
+    "building_count_nonzero": true,
+    "finite_source_coordinates": true,
+    "blend_reopens_with_buildings": true,
+    "glb_reimports_with_buildings": true,
+    "all_expected_glb_buildings_present": true,
+    "dimensions_preserved_to_2cm_in_blend": true,
+    "dimensions_preserved_to_2cm_in_glb": true,
+    "expected_buildings": 233,
+    "blend_building_objects": 233,
+    "glb_mesh_objects": 234
+  },
+  "blend_bytes": 1998516,
+  "glb_bytes": 380180
+}
