@@ -4,14 +4,18 @@
   "center": {"latitude": 35.67455, "longitude": 139.8079},
   "source_crs": "EPSG:6677",
   "local_crs": "EPSG:6677",
-  "vertical_datum": "Source CityGML Z; datum to be confirmed from the downloaded package metadata",
+  "vertical_datum": "JGD2011 gravity-related height from EPSG:6697 source coordinates",
   "extent_m": 500,
   "dataset": {
     "name": "Project PLATEAU Tokyo Koto City 3D City Model",
-    "release_year": null,
+    "release_year": 2023,
     "lod": "LOD1 preferred; source value recorded when present",
     "license": "Confirm from the official source package metadata",
-    "source_urls": ["https://www.mlit.go.jp/plateau/", "https://www.geospatial.jp/"]
+    "source_urls": [
+      "https://www.geospatial.jp/ckan/dataset/plateau-13108-koto-ku-2023",
+      "https://api.plateauview.mlit.go.jp/datacatalog/plateau-datasets",
+      "https://api.plateauview.mlit.go.jp/datacatalog/citygml/r:139.805137,35.672296,139.810663,35.676804"
+    ]
   },
   "input_dir": "data/raw",
   "processed_file": "data/processed/buildings.json",

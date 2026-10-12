@@ -13,7 +13,7 @@ def dimensions_match(objects):
         vertices=[obj.matrix_world @ vertex.co for obj in objects if obj.get('citygml_id')==b['id'] for vertex in obj.data.vertices]
         points=[point for ring in b['footprints'] for point in ring]
         if not vertices or not points: return False
-        expected=(min(p[0] for p in points),min(p[1] for p in points),0.0,max(p[0] for p in points),max(p[1] for p in points),float(b['height_m']))
+        base=float(b.get('base_z_m',0.0)); expected=(min(p[0] for p in points),min(p[1] for p in points),base,max(p[0] for p in points),max(p[1] for p in points),base+float(b['height_m']))
         actual=(min(v.x for v in vertices),min(v.y for v in vertices),min(v.z for v in vertices),max(v.x for v in vertices),max(v.y for v in vertices),max(v.z for v in vertices))
         if any(abs(a-e)>0.02 for a,e in zip(actual,expected)): return False
     return True

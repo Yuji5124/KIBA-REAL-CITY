@@ -29,14 +29,14 @@ for b in data['buildings']:
         if len(pts)<3: continue
         signed=sum(pts[i][0]*pts[(i+1)%len(pts)][1]-pts[(i+1)%len(pts)][0]*pts[i][1] for i in range(len(pts)))
         if signed<0: pts.reverse()
-        h=float(b['height_m']); verts=[(x,y,0.0) for x,y in pts]+[(x,y,h) for x,y in pts]; N=len(pts)
+        h=float(b['height_m']); base=float(b.get('base_z_m',0.0)); verts=[(x,y,base) for x,y in pts]+[(x,y,base+h) for x,y in pts]; N=len(pts)
         faces=[]
         for i in range(N): faces.append((i,(i+1)%N,(i+1)%N+N,i+N))
         tess=tessellate_polygon([[Vector((x,y,0)) for x,y in pts]])
         for tri in tess: faces.append(tuple(int(v)+N for v in tri))
         mesh=bpy.data.meshes.new(f'{b["id"]}_mesh'); mesh.from_pydata(verts,[],faces); mesh.materials.append(white); mesh.update()
         obj=bpy.data.objects.new(b['id'] if n==0 else f'{b["id"]}_{n+1}',mesh); buildings.objects.link(obj)
-        obj['citygml_id']=b['id']; obj['height_m']=h; obj['height_source']=b['height_source']; obj['source_file']=b['source_file']
+        obj['citygml_id']=b['id']; obj['height_m']=h; obj['base_z_m']=base; obj['measured_height_m']=b.get('measured_height_m'); obj['height_source']=b['height_source']; obj['source_file']=b['source_file']
         all_xy.extend(pts); count+=1
 if not count: raise SystemExit('No building mesh was created.')
 # Context ground is a neutral 500 m reference plane; it is not represented as measured terrain.
