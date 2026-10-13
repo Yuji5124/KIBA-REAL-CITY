@@ -1,5 +1,21 @@
 # KIBA REAL CITY — Phase 4A Web Explorer
 
+## Phase 5A local OSM editor
+
+Prepare ignored local feature files from the retained snapshot, then launch Vite:
+
+```sh
+cd ..
+python phase5a/scripts/build_feature_data.py
+cd phase4-web
+npm ci
+npm run dev
+```
+
+The Phase 5A panel adds independent roads, individual OSM tree points, and vegetation layers. Road attributes and a control point are editable; trees can be moved and have display dimensions/model fields changed; manual trees are marked unverified. Changes save to the ignored local `phase5a/edits/edits.json`, separate from the OSM source snapshot. The API only accepts same-origin edits on loopback. Do not expose the dev server on a public interface.
+
+Terrain is disabled pending confirmation of official GSI product metadata, vertical datum, and usage terms. OSM-derived features remain local while complete current redistribution terms are unverified. See `../phase5a/README.md` and `../LICENSE_DATA.md` before sharing derived data or screenshots.
+
 Local-only Three.js explorer for the unchanged Phase 3D v07 FLAT GLB. It supports walk mode, fly mode, compact building-AABB collision, desktop mouse/keyboard controls, and touch controls for iPad-sized screens. The viewer loads the repository's v07 GLB and georeference directly through a Vite asset plugin; its SHA-256 values are pinned and checked before serving or bundling. No geometry, materials, scale, or source files are rewritten.
 
 ## Requirements

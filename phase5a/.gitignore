@@ -1,0 +1,13 @@
+raw/
+__pycache__/
+*.py[cod]
+processed/*.json
+processed/*.geojson
+edits/*.json
+metadata/generated_*.json
+metadata/import_conflicts.json
+metadata/georeference.json
+metadata/sources.json
+metadata/terrain_status.json
+reports/
+!**/.gitkeep

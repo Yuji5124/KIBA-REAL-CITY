@@ -43,4 +43,5 @@ export interface AppUI {
   moveStick: HTMLElement;
   lookArea: HTMLElement;
   debugPanel: HTMLElement;
+  phase5Panel: HTMLDetailsElement;
 }

@@ -19,6 +19,7 @@ export class ExplorerControls {
   private readonly cells = new Map<string, Box3[]>();
   private readonly limits: { minX: number; maxX: number; minZ: number; maxZ: number };
   private disposed = false;
+  private pointerInteractionEnabled = true;
 
   constructor(
     private readonly camera: PerspectiveCamera,
@@ -53,6 +54,13 @@ export class ExplorerControls {
   reset(): void {
     if (this.mode === 'walk') this.resetWalk();
     else this.resetFly();
+  }
+
+  setPointerInteractionEnabled(enabled: boolean): void {
+    this.pointerInteractionEnabled = enabled;
+    this.draggingId = null;
+    this.touchPointers.clear();
+    this.stick.set(0, 0);
   }
 
   update(delta: number): void {
@@ -125,6 +133,7 @@ export class ExplorerControls {
   }
 
   private readonly onKeyDown = (event: KeyboardEvent): void => {
+    if (event.target instanceof HTMLElement && ['INPUT', 'TEXTAREA', 'SELECT', 'BUTTON'].includes(event.target.tagName)) return;
     const key = event.key.toLowerCase();
     if (key === 'escape') {
       this.draggingId = null;
@@ -140,6 +149,7 @@ export class ExplorerControls {
   private readonly clearInput = (): void => { this.keys.clear(); this.stick.set(0, 0); this.draggingId = null; };
 
   private readonly onCanvasPointerDown = (event: PointerEvent): void => {
+    if (!this.pointerInteractionEnabled) return;
     if (event.pointerType === 'touch') return;
     if (event.button !== 0) return;
     this.draggingId = event.pointerId;
@@ -158,6 +168,7 @@ export class ExplorerControls {
   };
 
   private readonly onLookDown = (event: PointerEvent): void => {
+    if (!this.pointerInteractionEnabled) return;
     if (event.pointerType !== 'touch') return;
     this.ui.lookArea.setPointerCapture(event.pointerId);
     this.touchPointers.set(event.pointerId, new Vector2(event.clientX, event.clientY));
@@ -200,6 +211,7 @@ export class ExplorerControls {
   };
 
   private readonly onWheel = (event: WheelEvent): void => {
+    if (!this.pointerInteractionEnabled) return;
     if (this.mode !== 'fly') return;
     event.preventDefault();
     this.camera.translateZ(Math.sign(event.deltaY) * Math.min(Math.abs(event.deltaY) * 0.45, 180));

@@ -16,6 +16,39 @@
       </header>
       <section id="debug-panel" class="debug-panel" hidden aria-live="polite"></section>
       <section id="error-panel" class="error-panel" hidden role="alert"></section>
+      <details id="phase5-panel" class="phase5-panel">
+        <summary>Phase 5A レイヤー / 編集</summary>
+        <div class="phase5-content">
+          <p id="phase5-status" class="phase5-status">OSM編集データ未読込</p>
+          <div class="phase5-layers">
+            <label><input id="layer-roads" type="checkbox" checked disabled> 道路 <span id="layer-roads-count">—</span></label>
+            <label><input id="layer-trees" type="checkbox" checked disabled> 樹木 <span id="layer-trees-count">—</span></label>
+            <label><input id="layer-vegetation" type="checkbox" checked disabled> 植生 <span id="layer-vegetation-count">—</span></label>
+            <label title="垂直基準と利用条件が未確認です"><input id="layer-terrain" type="checkbox" disabled> 地形 <span>BLOCKED</span></label>
+          </div>
+          <p id="phase5-attribution" class="phase5-attribution">OSM出典はデータ準備後に表示</p>
+          <div class="phase5-actions">
+            <button id="phase5-edit-toggle" type="button" disabled>編集モード</button>
+            <button id="phase5-add-tree" type="button" disabled>樹木を追加</button>
+          </div>
+          <div id="phase5-selection" class="phase5-selection" hidden>
+            <strong id="phase5-selection-title">未選択</strong>
+            <p id="phase5-selection-source"></p>
+            <div id="phase5-fields" class="phase5-fields"></div>
+            <div class="phase5-actions">
+              <button id="phase5-apply" type="button">編集を適用</button>
+              <button id="phase5-delete" type="button">削除フラグ</button>
+              <button id="phase5-undo" type="button">Undo</button>
+              <button id="phase5-revert" type="button">元データ</button>
+            </div>
+          </div>
+          <div class="phase5-actions">
+            <button id="phase5-save" type="button" disabled>編集差分を保存</button>
+            <button id="phase5-reset" type="button" disabled>全差分を破棄</button>
+          </div>
+          <small>保存はこの端末のローカル開発サーバーに限ります。編集値はOSM元データと分離します。</small>
+        </div>
+      </details>
       <aside class="touch-zone touch-left" aria-label="移動用仮想スティック">
         <div id="move-stick" class="stick"><span class="stick-knob"></span></div>
         <span class="touch-label">MOVE</span>

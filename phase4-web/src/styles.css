@@ -133,3 +133,51 @@ button:disabled { opacity: .55; cursor: wait; }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
 }
+.phase5-panel {
+  position: absolute;
+  z-index: 8;
+  top: max(76px, env(safe-area-inset-top) + 66px);
+  left: max(16px, env(safe-area-inset-left));
+  width: min(330px, calc(100vw - 32px));
+  color: #203236;
+  background: rgba(248, 250, 247, 0.96);
+  border: 1px solid rgba(41, 78, 78, 0.16);
+  border-radius: 14px;
+  box-shadow: 0 12px 32px rgba(32, 52, 56, 0.16);
+  font-size: 12px;
+  backdrop-filter: blur(12px);
+}
+
+.phase5-panel > summary {
+  min-height: 40px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  list-style-position: inside;
+}
+
+.phase5-content { padding: 0 14px 14px; max-height: min(62vh, 560px); overflow: auto; }
+.phase5-status { margin: 2px 0 10px; color: #507174; line-height: 1.4; }
+.phase5-layers { display: grid; gap: 7px; padding: 10px; border-radius: 9px; background: #edf2ef; }
+.phase5-layers label { display: flex; gap: 8px; align-items: center; }
+.phase5-layers span { margin-left: auto; color: #607879; font-variant-numeric: tabular-nums; }
+.phase5-attribution { margin: 9px 0; color: #52686a; font-size: 10px; line-height: 1.45; }
+.phase5-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.phase5-actions button { min-height: 32px; padding: 0 9px; border: 1px solid #c9d6d2; border-radius: 7px; background: #fff; color: #244749; font: inherit; cursor: pointer; }
+.phase5-actions button:disabled { opacity: 0.45; cursor: default; }
+.phase5-selection { margin-top: 10px; padding-top: 10px; border-top: 1px solid #d9e2df; }
+.phase5-selection p { margin: 4px 0 8px; color: #63797b; font-size: 10px; overflow-wrap: anywhere; }
+.phase5-fields { display: grid; grid-template-columns: 1fr 1fr; gap: 6px 8px; }
+.phase5-fields label { display: grid; gap: 3px; color: #536a6c; font-size: 10px; }
+.phase5-fields input, .phase5-fields select { box-sizing: border-box; width: 100%; height: 30px; padding: 3px 6px; border: 1px solid #cbd8d5; border-radius: 6px; background: white; color: #243b3e; font: inherit; }
+.phase5-content small { display: block; margin-top: 9px; color: #708385; font-size: 9px; line-height: 1.45; }
+.feature-edit-mode .touch-zone { pointer-events: none; opacity: 0.22; }
+
+@media (max-width: 700px) {
+  .phase5-panel { top: max(74px, env(safe-area-inset-top) + 64px); left: 10px; width: min(310px, calc(100vw - 20px)); }
+  .phase5-content { max-height: 52vh; }
+}

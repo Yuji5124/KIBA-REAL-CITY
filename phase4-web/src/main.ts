@@ -23,6 +23,7 @@ const ui: AppUI = {
   moveStick: required('#move-stick'),
   lookArea: required('.touch-right'),
   debugPanel: required('#debug-panel'),
+  phase5Panel: required<HTMLDetailsElement>('#phase5-panel'),
 };
 
 try {

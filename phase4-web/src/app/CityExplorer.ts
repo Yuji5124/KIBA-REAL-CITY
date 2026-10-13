@@ -2,12 +2,14 @@ import { ExplorerControls } from '../controls/ExplorerControls';
 import { DebugPanel } from '../diagnostics/DebugPanel';
 import { loadCityModel } from '../loaders/loadCityModel';
 import { createScene } from '../scene/createScene';
+import { FeatureEditor } from '../phase5a/FeatureEditor';
 import type { AppUI, ExplorerMode } from '../types';
 
 export class CityExplorer {
   private readonly runtime;
   private controls?: ExplorerControls;
   private debug?: DebugPanel;
+  private phase5?: FeatureEditor;
   private animationId = 0;
   private lastFrame = 0;
   private contextLost = false;
@@ -37,6 +39,9 @@ export class CityExplorer {
       });
       this.runtime.scene.add(info.root);
       this.controls = new ExplorerControls(this.runtime.camera, this.ui.canvas, this.ui, geo, info.buildingBoxes, info.bounds);
+      this.phase5 = new FeatureEditor(this.runtime.scene, this.ui.canvas, this.runtime.camera, this.ui.phase5Panel,
+        (enabled) => this.controls?.setPointerInteractionEnabled(enabled));
+      void this.phase5.load();
       this.setControlsEnabled(true);
       this.debug = new DebugPanel(this.ui.debugPanel, this.runtime.renderer, this.runtime.camera, info, geo);
       const width = info.bounds.max.x - info.bounds.min.x;
@@ -60,6 +65,7 @@ export class CityExplorer {
   dispose(): void {
     cancelAnimationFrame(this.animationId);
     this.controls?.dispose();
+    this.phase5?.dispose();
     window.removeEventListener('resize', this.runtime.resize);
     document.removeEventListener('visibilitychange', this.onVisibilityChange);
     this.ui.canvas.removeEventListener('webglcontextlost', this.onContextLost);
