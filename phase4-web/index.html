@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no" />
+    <meta name="theme-color" content="#dce7e8" />
+    <meta name="description" content="木場公園と東京都現代美術館周辺の実在3D都市モデルを探索するローカルアプリ" />
+    <title>KIBA REAL CITY — Phase 4A</title>
+  </head>
+  <body>
+    <main id="app" aria-label="KIBA REAL CITY都市探索アプリ">
+      <canvas id="city-canvas" aria-label="3D都市ビュー"></canvas>
+      <header class="topbar">
+        <div class="brand"><span class="brand-mark"></span><span>KIBA REAL CITY</span></div>
+        <div class="scene-chip"><span class="status-dot"></span><span id="load-status">都市データを読み込み中…</span></div>
+      </header>
+      <section id="debug-panel" class="debug-panel" hidden aria-live="polite"></section>
+      <section id="error-panel" class="error-panel" hidden role="alert"></section>
+      <aside class="touch-zone touch-left" aria-label="移動用仮想スティック">
+        <div id="move-stick" class="stick"><span class="stick-knob"></span></div>
+        <span class="touch-label">MOVE</span>
+      </aside>
+      <aside class="touch-zone touch-right" aria-label="視点操作領域">
+        <span class="touch-label">LOOK</span>
+      </aside>
+      <nav class="bottom-hud" aria-label="操作パネル">
+        <div class="mode-switch" role="group" aria-label="移動モード">
+          <button id="walk-button" class="mode-button" type="button" aria-pressed="false"><span class="mode-icon">◉</span> WALK</button>
+          <button id="fly-button" class="mode-button active" type="button" aria-pressed="true"><span class="mode-icon">⌖</span> FLY</button>
+        </div>
+        <div class="control-hint" id="control-hint">WASDで移動　ドラッグで視点　Shiftで加速</div>
+        <div class="hud-actions">
+          <div id="altitude-controls" class="altitude-controls" hidden aria-label="高度">
+            <button id="ascend-button" type="button" aria-label="上昇">＋</button>
+            <button id="descend-button" type="button" aria-label="下降">−</button>
+          </div>
+          <button id="reset-button" class="reset-button" type="button"><span>↺</span> RESET</button>
+        </div>
+      </nav>
+      <div id="load-progress" class="load-progress"><span></span></div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

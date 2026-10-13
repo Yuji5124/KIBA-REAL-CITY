@@ -1,0 +1,12 @@
+node_modules/
+dist/
+coverage/
+playwright-report/
+test-results/
+.vite/
+
+# Local validation artifacts include model-derived output and must stay private.
+reports/*.png
+reports/*.json
+reports/*.md
+!reports/.gitkeep
